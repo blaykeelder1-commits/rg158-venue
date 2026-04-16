@@ -1,0 +1,117 @@
+.contact-page .page-header {
+  padding: calc(70px + var(--spacing-4xl)) 0 var(--spacing-3xl);
+  text-align: center;
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-page .page-header h1 {
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-page .page-header p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--spacing-3xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.info-block {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.info-block h3 {
+  color: var(--color-gold);
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.info-block p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  margin: 0 0 var(--spacing-xs);
+  line-height: 1.6;
+}
+
+.info-note {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--spacing-xs);
+}
+
+.info-phone {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.info-phone.secondary {
+  font-size: var(--text-xl);
+  margin-top: var(--spacing-md);
+}
+
+.contact-social {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.contact-social a {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color var(--transition-fast);
+}
+
+.contact-social a:hover {
+  color: var(--color-gold);
+}
+
+.contact-form-panel {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+}
+
+.form-success {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-xl);
+}
+
+.form-success h3 {
+  color: var(--color-gold);
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+}
+
+.form-success p {
+  color: var(--color-text-secondary);
+}
+
+.form-error {
+  color: var(--color-error);
+  font-size: var(--text-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-map {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

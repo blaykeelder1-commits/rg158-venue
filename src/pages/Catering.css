@@ -1,0 +1,124 @@
+.catering-page .page-header {
+  padding: calc(70px + var(--spacing-4xl)) 0 var(--spacing-3xl);
+  text-align: center;
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.catering-page .page-header h1 {
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-md);
+}
+
+.catering-page .page-header p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+}
+
+.catering-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.catering-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.catering-card h3 {
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.catering-serves {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.catering-card ul {
+  list-style: none;
+  flex-grow: 1;
+  margin-bottom: var(--spacing-xl);
+}
+
+.catering-card li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.catering-card li svg {
+  flex-shrink: 0;
+}
+
+.catering-price {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-text);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.catering-note {
+  text-align: center;
+  padding: var(--spacing-3xl);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.catering-note h3 {
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-md);
+}
+
+.catering-note p {
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.catering-cta-group {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.jrodgers-banner {
+  background: var(--color-gold-muted);
+  border: 1px solid rgba(212, 168, 67, 0.25);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+}
+
+.jrodgers-info h3 {
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-md);
+}
+
+.jrodgers-info p {
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .catering-packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto var(--spacing-3xl);
+  }
+}

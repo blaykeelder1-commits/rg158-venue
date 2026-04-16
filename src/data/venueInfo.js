@@ -1,0 +1,31 @@
+export const venueInfo = {
+  name: 'RG 158 Sports Bar & Entertainment',
+  tagline: 'Your Event. Our Stage.',
+  address: '1444-C Industrial Parkway',
+  city: 'Saraland',
+  state: 'AL',
+  zip: '36571',
+  phone: '(251) 217-2273',
+  email: 'info@rg158ent.com',
+  website: 'https://rg158ent.com',
+  googleMapsUrl: 'https://www.google.com/maps/place/1444+Industrial+Pkwy,+Saraland,+AL+36571',
+  social: {
+    instagram: 'https://www.instagram.com/rg158ent/',
+    facebook: 'https://www.facebook.com/people/RG-158-Sports-Bar-Entertainment/61570322458530/',
+    tiktok: 'https://www.tiktok.com/@rg158entertain',
+  },
+  jrodgers: {
+    name: 'J Rodgers BBQ & Soul Food',
+    website: 'https://jrodgersbbq.net',
+    phone: '(251) 675-3282',
+    cateringUrl: 'https://jrodgersbbq.net/catering',
+  },
+  features: [
+    { icon: 'bar', title: 'Full Bar', description: 'Downstairs main bar + upstairs VIP bar with craft cocktails and draft beer' },
+    { icon: 'sound', title: 'Concert Sound', description: 'Professional sound system with full PA, monitors, and mixing board' },
+    { icon: 'lights', title: 'Stage Lighting', description: 'Concert-level lighting rig with programmable effects' },
+    { icon: 'projector', title: 'Giant Projector', description: 'Large projector screen for presentations, slideshows, or game day' },
+    { icon: 'vip', title: 'VIP Lounge', description: 'Private upstairs VIP room with dedicated bar, seating for 8-10' },
+    { icon: 'catering', title: 'On-Site Catering', description: 'Authentic BBQ & soul food catering by J Rodgers BBQ — right next door' },
+  ],
+};

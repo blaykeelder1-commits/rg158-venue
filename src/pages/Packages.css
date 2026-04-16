@@ -1,0 +1,133 @@
+.packages-page .page-header {
+  padding: calc(70px + var(--spacing-4xl)) 0 var(--spacing-3xl);
+  text-align: center;
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.packages-page .page-header h1 {
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-md);
+}
+
+.packages-page .page-header p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Add-Ons */
+.addons-section {
+  background: var(--color-bg-elevated);
+}
+
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.addon-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  transition: border-color var(--transition-fast);
+}
+
+.addon-card:hover {
+  border-color: var(--color-border-light);
+}
+
+.addon-name {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.addon-desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.addon-price {
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: var(--spacing-md);
+}
+
+.addon-amount {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-gold);
+}
+
+.addon-unit {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+/* FAQ */
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) 0;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: var(--text-base);
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.faq-question:hover {
+  color: var(--color-gold);
+}
+
+.faq-question svg {
+  flex-shrink: 0;
+  color: var(--color-gold);
+}
+
+.faq-answer {
+  padding: 0 0 var(--spacing-lg);
+}
+
+.faq-answer p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .addons-grid {
+    grid-template-columns: 1fr;
+  }
+}

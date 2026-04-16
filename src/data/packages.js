@@ -1,0 +1,106 @@
+export const packages = [
+  {
+    id: 'kickback',
+    name: 'The Kickback',
+    subtitle: 'Small Events & Private Parties',
+    price: 500,
+    priceLabel: '$500',
+    duration: '4 hours',
+    capacity: 'Up to 50 guests',
+    cateringFrom: 12,
+    includes: [
+      'Full bar access (cash bar)',
+      'Sound system + TV/projector',
+      'Basic lighting package',
+      'Tables & seating arrangement',
+      'Dedicated event staff',
+    ],
+    idealFor: ['Birthday parties', 'Watch parties', 'Small corporate gatherings', 'Rehearsal dinners', 'Class reunions'],
+    popular: false,
+  },
+  {
+    id: 'main-event',
+    name: 'The Main Event',
+    subtitle: 'Receptions, Banquets & Celebrations',
+    price: 1200,
+    priceLabel: '$1,200',
+    duration: '6 hours',
+    capacity: 'Up to 100 guests',
+    cateringFrom: 18,
+    includes: [
+      'Full bar (cash or hosted bar option)',
+      'Full sound system + lighting + projector',
+      'Upstairs VIP lounge included',
+      'Dedicated bar staff',
+      'Setup & breakdown assistance',
+      'Custom event lighting',
+    ],
+    idealFor: ['Wedding receptions', 'Banquets', 'Family reunions', 'Corporate events', 'Fundraisers'],
+    popular: true,
+  },
+  {
+    id: 'welcome-home',
+    name: 'The Welcome Home',
+    subtitle: 'Full Venue Takeover',
+    price: 2500,
+    priceLabel: '$2,500',
+    duration: '8 hours',
+    capacity: '150+ guests',
+    cateringFrom: 22,
+    includes: [
+      'Full venue (upstairs + downstairs + VIP)',
+      'Concert-level sound + lighting + projector',
+      'Hosted bar package available',
+      'Setup & breakdown time included',
+      'Priority booking',
+      'Dedicated event coordinator',
+      'Custom floor plan consultation',
+    ],
+    idealFor: ['Weddings', 'Large corporate events', 'Concerts & showcases', 'Galas', 'Community celebrations'],
+    popular: false,
+  },
+];
+
+export const addOns = [
+  { id: 'hosted-bar-2hr', name: 'Open Bar (2 hours)', price: 15, unit: '/person', description: 'Unlimited well drinks, beer, and wine for 2 hours' },
+  { id: 'hosted-bar-4hr', name: 'Open Bar (4 hours)', price: 25, unit: '/person', description: 'Unlimited well drinks, beer, and wine for 4 hours' },
+  { id: 'extended-hours', name: 'Extended Hours', price: 200, unit: '/hour', description: 'Add extra time to your event' },
+  { id: 'dj-mc', name: 'DJ / MC Services', price: 300, unit: 'flat', description: 'Professional DJ and MC for your event' },
+  { id: 'custom-lighting', name: 'Custom Lighting Package', price: 200, unit: 'flat', description: 'Uplighting, color wash, and custom effects' },
+  { id: 'coordinator', name: 'Day-Of Coordinator', price: 350, unit: 'flat', description: 'Dedicated coordinator to manage your event timeline' },
+];
+
+export const cateringPackages = [
+  {
+    name: 'BBQ Essentials',
+    price: '$12/person',
+    serves: '10-50 guests',
+    includes: ['Choice of 2 meats', '2 large sides', 'Bread', 'Sauce & pickles'],
+  },
+  {
+    name: 'Soul Food Spread',
+    price: '$18/person',
+    serves: '20-100 guests',
+    includes: ['Choice of 3 meats', '3 large sides', 'Bread & butter', 'Dessert option', 'Sweet tea'],
+  },
+  {
+    name: 'Welcome Home Feast',
+    price: '$25/person',
+    serves: '50+ guests',
+    includes: ['All meats available', '4 large sides', 'Bread & cornbread', 'Dessert selection', 'Drinks included', 'Setup & serving staff'],
+  },
+];
+
+export const eventTypes = [
+  'Wedding Reception',
+  'Corporate Event',
+  'Birthday Party',
+  'Family Reunion',
+  'Graduation',
+  'Banquet',
+  'Concert / Showcase',
+  'Fundraiser',
+  'Holiday Party',
+  'Memorial / Celebration of Life',
+  'Other',
+];
