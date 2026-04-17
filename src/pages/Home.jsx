@@ -21,6 +21,18 @@ function Home() {
     <div className="home">
       {/* Hero */}
       <section className="hero">
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/hero-poster.jpg"
+        >
+          <source src="/videos/hero-loop.webm" type="video/webm" />
+          <source src="/videos/hero-loop.mp4" type="video/mp4" />
+        </video>
         <div className="hero-overlay" />
         <div className="hero-content container">
           <h1 className="hero-title">
@@ -70,6 +82,26 @@ function Home() {
                 <p className="feature-desc">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sizzle Reel Showcase */}
+      <section className="section video-showcase">
+        <div className="container">
+          <h2 className="section-title">See It For Yourself</h2>
+          <p className="section-subtitle">
+            Walk through the venue. Feel the lighting. Picture your event under our roof.
+          </p>
+          <div className="sizzle-frame">
+            <video
+              className="sizzle-video"
+              controls
+              preload="none"
+              poster="/sizzle-poster.jpg"
+            >
+              <source src="/videos/sizzle-reel.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>

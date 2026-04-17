@@ -84,6 +84,26 @@ function Packages() {
         </div>
       </section>
 
+      {/* Picture-your-event sizzle */}
+      <section className="section video-showcase">
+        <div className="container">
+          <h2 className="section-title">Picture Your Event Here</h2>
+          <p className="section-subtitle">
+            Take a 60-second walk through the venue. Then come back and pick your package.
+          </p>
+          <div className="sizzle-frame">
+            <video
+              className="sizzle-video"
+              controls
+              preload="none"
+              poster="/sizzle-poster.jpg"
+            >
+              <source src="/videos/sizzle-reel.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section faq-section">
         <div className="container">

@@ -3,3 +3,8 @@ dist
 .env
 .env.local
 .vercel
+
+# Raw venue footage (127MB MOVs — not committed; processed outputs live in public/)
+raw-videos/
+scripts/tmp-segments/
+scripts/preview/
