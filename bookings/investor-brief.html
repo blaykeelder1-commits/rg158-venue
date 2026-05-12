@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>RG 158 Comedy Series — Investor &amp; Stakeholder Brief v2</title>
+<style>
+  @page { size: Letter; margin: 0.6in 0.7in; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Helvetica', 'Arial', sans-serif; color: #1a1a1a; line-height: 1.45; font-size: 10.5pt; margin: 0; }
+  h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', sans-serif; font-weight: 700; color: #1a1a1a; margin-top: 0; }
+  h1 { font-size: 28pt; letter-spacing: -0.5pt; line-height: 1.05; }
+  h2 { font-size: 18pt; letter-spacing: -0.3pt; margin: 32pt 0 10pt; padding-bottom: 4pt; border-bottom: 2px solid #c9a227; }
+  h3 { font-size: 13pt; margin: 18pt 0 6pt; color: #2a2a2a; }
+  h4 { font-size: 11pt; margin: 12pt 0 4pt; color: #4a4a4a; text-transform: uppercase; letter-spacing: 0.5pt; }
+  p { margin: 6pt 0; }
+  strong { color: #000; }
+  .gold { color: #c9a227; }
+  .muted { color: #666; font-size: 9.5pt; }
+  .small { font-size: 9pt; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 14pt 0; }
+
+  .cover { page-break-after: always; padding: 1.2in 0 0; text-align: left; }
+  .cover .brand { font-size: 11pt; letter-spacing: 3pt; color: #c9a227; text-transform: uppercase; margin-bottom: 0.6in; }
+  .cover h1 { font-size: 42pt; line-height: 1; margin-bottom: 14pt; }
+  .cover h1 .accent { color: #c9a227; }
+  .cover .sub { font-size: 14pt; color: #555; margin-bottom: 0.4in; max-width: 5.5in; }
+  .cover .meta { margin-top: 0.6in; font-size: 10pt; color: #444; }
+  .cover .meta div { margin: 4pt 0; }
+  .cover .meta .label { display: inline-block; width: 1.4in; color: #888; }
+  .cover .stamp { margin-top: 0.4in; padding: 14pt 16pt; background: #1a1a1a; color: #fff; max-width: 5in; }
+  .cover .stamp .big { font-size: 22pt; font-weight: 700; color: #c9a227; }
+  .cover .stamp .desc { font-size: 9.5pt; color: #ccc; margin-top: 4pt; }
+  .cover .v-stamp { display: inline-block; padding: 3pt 10pt; background: #c9a227; color: #1a1a1a; font-size: 8.5pt; font-weight: 700; letter-spacing: 1pt; margin-bottom: 14pt; }
+
+  .page-break { page-break-before: always; }
+  .avoid-break { page-break-inside: avoid; }
+
+  table { width: 100%; border-collapse: collapse; margin: 8pt 0 14pt; font-size: 9.5pt; }
+  th { background: #1a1a1a; color: #fff; text-align: left; padding: 7pt 9pt; font-weight: 600; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  td { padding: 7pt 9pt; border-bottom: 1px solid #e3e3e3; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafafa; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td.tier-c { border-left: 3px solid #888; }
+  td.tier-b { border-left: 3px solid #2c7be5; }
+  td.tier-a { border-left: 3px solid #c9a227; }
+  td.tier-d { border-left: 3px solid #8e44ad; }
+  td.roi-strong { background: #e8f5e9 !important; font-weight: 600; }
+  td.roi-weak { background: #ffebee !important; }
+
+  .summary-box { background: #fff8e1; border-left: 4px solid #c9a227; padding: 12pt 14pt; margin: 12pt 0; }
+  .alert-box { background: #ffebee; border-left: 4px solid #c62828; padding: 12pt 14pt; margin: 12pt 0; }
+  .info-box { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 12pt 14pt; margin: 12pt 0; }
+  .net-callout { background: #1a1a1a; color: #fff; padding: 16pt 18pt; margin: 14pt 0; }
+  .net-callout .figure { font-size: 30pt; font-weight: 700; color: #c9a227; line-height: 1; }
+  .net-callout .label { font-size: 9pt; text-transform: uppercase; letter-spacing: 1pt; color: #999; margin-top: 4pt; }
+
+  .comic-card { border: 1px solid #ddd; border-radius: 4pt; padding: 12pt 14pt; margin: 10pt 0; page-break-inside: avoid; }
+  .comic-card .header-row { display: table; width: 100%; margin-bottom: 6pt; }
+  .comic-card .name-block { display: table-cell; vertical-align: top; }
+  .comic-card .name { font-size: 14pt; font-weight: 700; }
+  .comic-card .meta-line { font-size: 9pt; color: #666; margin-top: 2pt; }
+  .comic-card .fee-block { display: table-cell; vertical-align: top; text-align: right; width: 1.6in; }
+  .comic-card .fee { font-size: 14pt; font-weight: 700; color: #c9a227; line-height: 1; }
+  .comic-card .fee-label { font-size: 8pt; color: #888; text-transform: uppercase; letter-spacing: 0.4pt; }
+  .comic-card .grid { display: table; width: 100%; margin-top: 8pt; border-collapse: collapse; }
+  .comic-card .grid > div { display: table-cell; padding: 6pt 8pt 6pt 0; vertical-align: top; font-size: 9pt; width: 25%; }
+  .comic-card .grid .lbl { color: #999; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.4pt; display: block; margin-bottom: 2pt; }
+  .comic-card .why { background: #fafafa; padding: 8pt 10pt; margin-top: 8pt; font-size: 9.5pt; border-left: 2px solid #c9a227; }
+  .comic-card .roi-bar { background: #e8f5e9; padding: 6pt 10pt; margin-top: 8pt; font-size: 9pt; border-left: 2px solid #4caf50; }
+  .tag { display: inline-block; padding: 2pt 7pt; border-radius: 12pt; font-size: 8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3pt; }
+  .tag-a { background: #c9a227; color: #fff; }
+  .tag-b { background: #2c7be5; color: #fff; }
+  .tag-c { background: #888; color: #fff; }
+  .tag-d { background: #8e44ad; color: #fff; }
+  .tag-female { background: #e91e63; color: #fff; }
+  .tag-local { background: #43a047; color: #fff; }
+  .tag-bang { background: #ff6f00; color: #fff; }
+
+  .month-block { margin: 14pt 0; padding: 10pt 12pt; border: 1px solid #e3e3e3; border-radius: 3pt; page-break-inside: avoid; }
+  .month-header { font-weight: 700; font-size: 12pt; color: #1a1a1a; padding-bottom: 4pt; border-bottom: 1px solid #c9a227; margin-bottom: 8pt; }
+  .month-header .month-name { letter-spacing: 0.4pt; }
+  .month-header .month-tag { font-size: 9pt; color: #c9a227; text-transform: uppercase; float: right; }
+  .month-cap { font-size: 9pt; color: #4caf50; font-weight: 600; margin-bottom: 6pt; }
+
+  ul { margin: 6pt 0; padding-left: 18pt; }
+  li { margin: 3pt 0; }
+
+  .footer-line { margin-top: 24pt; padding-top: 8pt; border-top: 1px solid #ddd; font-size: 8.5pt; color: #888; text-align: center; }
+
+  .two-col { display: table; width: 100%; }
+  .two-col > div { display: table-cell; vertical-align: top; padding-right: 14pt; }
+  .two-col > div:last-child { padding-right: 0; }
+
+  .snowball-bar { display: table; width: 100%; margin: 12pt 0; border-collapse: collapse; }
+  .snowball-bar > div { display: table-cell; padding: 8pt 6pt; text-align: center; border-right: 1px solid #fff; vertical-align: top; }
+  .snowball-bar > div:last-child { border-right: none; }
+  .snowball-bar .month-lbl { font-size: 8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5pt; }
+  .snowball-bar .cap-amt { font-size: 11pt; font-weight: 700; margin-top: 4pt; }
+  .sb-1 { background: #ffe0b2; }
+  .sb-2 { background: #ffd180; }
+  .sb-3 { background: #ffb74d; }
+  .sb-4 { background: #ff9800; color: #fff; }
+  .sb-5 { background: #f57c00; color: #fff; }
+  .sb-6 { background: #e65100; color: #fff; }
+  .sb-7 { background: #bf360c; color: #fff; }
+  .sb-8 { background: #1a1a1a; color: #c9a227; }
+</style>
+</head>
+<body>
+
+<!-- =========== COVER =========== -->
+<section class="cover">
+  <div class="brand">RG 158 Sports Bar &amp; Entertainment · Saraland, Alabama</div>
+  <span class="v-stamp">VERSION 3 · ROI-OPTIMIZED · SNOWBALL MODEL · VETERAN REVIEW</span>
+  <h1>The Saraland<br/>Stand-Up <span class="accent">Series.</span></h1>
+  <div class="sub">An 8-month curated comedy run, bootstrapped from $10K starting capital, snowballing into the April 2027 country music festival war chest.</div>
+
+  <div class="stamp">
+    <div class="big">$10K → $413K</div>
+    <div class="desc">Starting capital snowballed across 48 shows · 14 priority comedians · ROI-ranked · July 2026 → February 2027</div>
+  </div>
+
+  <div class="meta">
+    <div><span class="label">Prepared for:</span> Investors, Owners, Stakeholders</div>
+    <div><span class="label">Prepared by:</span> Blayke Elder · Owner, RG 158 Entertainment</div>
+    <div><span class="label">Date:</span> May 10, 2026</div>
+    <div><span class="label">Venue:</span> 1444-C Industrial Parkway, Saraland, AL 36571</div>
+    <div><span class="label">Capacity:</span> 200 (downstairs GA + reserved + upstairs VIP)</div>
+    <div><span class="label">Web:</span> rg158ent.com · IG @rg158ent · TikTok @rg158entertain</div>
+  </div>
+
+  <div class="info-box" style="margin-top: 0.4in;">
+    <strong>Why a v2?</strong> v1 assumed unconstrained working capital. v2 reflects the operational reality: <strong>$10K total starting capital</strong>. Every show in months 1–4 is sized to be self-funding from the prior show's net. Anchors are pushed to months 5, 7, and 8 once working capital has compounded. Lineup is ROI-ranked — every comedian justified by gate-vs-fee math, with podcast/local-pull comics added for higher bang-for-buck.
+  </div>
+</section>
+
+<!-- =========== EXECUTIVE SUMMARY =========== -->
+<section>
+  <h2>Executive Summary</h2>
+
+  <p><strong>The play.</strong> Bootstrap a curated comedy series from $10,000 starting capital. Each weekend's net funds the next weekend's talent and operations, snowballing working capital from $10K (July) to $400K+ (February) — funding the deposits, production, and marketing for the April 2027 country music festival without external financing.</p>
+
+  <p><strong>Why comedy first.</strong> Comedy is the lowest-friction, highest-margin live entertainment category for a 200-cap room. One mic. One stool. No band rigs. Comics carry their own audiences via TikTok, Instagram, and podcasts. Two-show nights double the room without doubling overhead. Comedy ticket sales are recession-resilient.</p>
+
+  <p><strong>Strategy: snowball, not splurge.</strong> With $10K starting capital, we cannot afford a Tier A anchor in months 1–4. Instead we open with low-fee, high-ROI bookings: <strong>Heath Hyche</strong> (Birmingham AL native, Blue Collar TV alum), local Mobile/Pensacola circuit, Adam Minnick (Dry Bar/Nateland). We compound revenue into August/September with mid-tier names (Aaron Weber, Phil Hanley, Lace Larrabee). By November our working capital supports our first Tier A anchor (Killer Beaz). January and February deliver back-to-back anchors, with Trae Crowder's February show doubling as the country festival announcement event.</p>
+
+  <p><strong>The math works because of ROI ranking.</strong> Every comedian on this lineup is selected by an explicit "gate ÷ fee" ratio. Heath Hyche projects a 3.6 ratio. Aaron Weber 2.94. Mark Chalifoux 3.15. Phil Hanley 1.77 (he commands premium ticket prices, not just volume). Tony Baker 1.85. The bang-for-buck candidates carry the volume; anchors deliver the brand and the email-list compounding.</p>
+
+  <div class="net-callout">
+    <div class="figure">$10,000</div>
+    <div class="label">Starting capital · Cash on hand for July first show</div>
+    <div style="margin-top: 14pt;" class="figure">$413,000</div>
+    <div class="label">Conservative net by end of February 2027 (with 30% buffer for ramp + sellthrough variance)</div>
+  </div>
+
+  <h3>What changed from v1</h3>
+  <ul>
+    <li><strong>Schedule restructured for snowball:</strong> July talent budget cut from $15K to $5.3K · Anchor moved from October to November · Anchors land in months 5, 7, 8 once working capital exceeds $250K</li>
+    <li><strong>Three high-ROI comedians added:</strong> Heath Hyche (Alabama native), Phil Hanley (JRE/Comedy Cellar pull), Tony Baker (Black/country crossover)</li>
+    <li><strong>Bang-for-buck ROI ranking</strong> applied to every name — comedians whose gate-vs-fee ratio is below 1.5 are dropped (Trey Kennedy, Stavros Halkias) unless they earn anchor-tier brand value</li>
+    <li><strong>Local market deep dive:</strong> Compton Smith network (Smokey Jokes Mobile + Stingers Pensacola) identified as the local-circuit gatekeeper · Crescent Theater Mobile + StarDome Birmingham mid-tier benchmarks confirmed</li>
+    <li><strong>Talent total reduced</strong> from $163K → $143K · Net forecast comparable</li>
+  </ul>
+</section>
+
+<!-- =========== SNOWBALL =========== -->
+<section class="page-break">
+  <h2>The Snowball — Capital Compounding from $10K</h2>
+
+  <p>This is the central operational thesis: <strong>each weekend's net funds the next weekend's talent and operations</strong>. Anchors only get booked once cumulative working capital safely exceeds 4× the anchor fee.</p>
+
+  <div class="snowball-bar">
+    <div class="sb-1"><div class="month-lbl">JULY START</div><div class="cap-amt">$10K</div></div>
+    <div class="sb-2"><div class="month-lbl">END JULY</div><div class="cap-amt">$55K</div></div>
+    <div class="sb-3"><div class="month-lbl">END AUG</div><div class="cap-amt">$115K</div></div>
+    <div class="sb-4"><div class="month-lbl">END SEP</div><div class="cap-amt">$190K</div></div>
+    <div class="sb-5"><div class="month-lbl">END OCT</div><div class="cap-amt">$270K</div></div>
+    <div class="sb-6"><div class="month-lbl">END NOV</div><div class="cap-amt">$360K</div></div>
+    <div class="sb-7"><div class="month-lbl">END JAN</div><div class="cap-amt">$515K</div></div>
+    <div class="sb-8"><div class="month-lbl">END FEB</div><div class="cap-amt">$590K</div></div>
+  </div>
+
+  <p class="muted small">Cumulative working capital at month-end (gross net before festival deposit deployment). Conservative scenario reduces these figures ~30% for sellthrough variance and ramp loss; even at conservative case, cumulative end-of-Feb is ~$413K.</p>
+
+  <h3>The capital sequencing rule</h3>
+  <table>
+    <thead><tr><th>If working capital is...</th><th>Maximum talent fee per booking</th><th>Tier accessible</th></tr></thead>
+    <tbody>
+      <tr><td>$0 – $25K</td><td>$3K</td><td>Tier C (local), low Tier B (emerging)</td></tr>
+      <tr><td>$25K – $80K</td><td>$6K</td><td>Tier B mid (Aaron Weber, Mark Chalifoux)</td></tr>
+      <tr><td>$80K – $200K</td><td>$10K</td><td>Tier B premium (Phil Hanley, Lace Larrabee, Tony Baker)</td></tr>
+      <tr><td>$200K – $400K</td><td>$15K</td><td>Tier B+ (Karlous Miller, Dustin Nickerson premium)</td></tr>
+      <tr><td>$400K+</td><td>$25K</td><td>Tier A anchors (Killer Beaz, Dusty Slay, Trae Crowder)</td></tr>
+    </tbody>
+  </table>
+
+  <p class="small"><strong>Why this rule:</strong> a Tier A anchor that fails at 60% sellthrough loses ~$8K. If we book a Tier A while working capital is below $80K, one bad weekend kills the series. With $400K+ working capital, the same loss is ~2% of bank — recoverable inside one weekend.</p>
+
+  <h3>First show — exactly $10K deployed</h3>
+  <table>
+    <thead><tr><th colspan="2">Heath Hyche · July 10–11 · Friday + Saturday × 2 shows</th><th class="num">$</th></tr></thead>
+    <tbody>
+      <tr><td colspan="2">Talent (Heath Hyche, Birmingham native, Blue Collar TV alum)</td><td class="num">$2,000</td></tr>
+      <tr><td colspan="2">Hospitality rider (hotel + transport + buyout)</td><td class="num">$400</td></tr>
+      <tr><td colspan="2">Marketing / Meta ads (debut show — push hard)</td><td class="num">$600</td></tr>
+      <tr><td colspan="2">Staff (10 staff × 6hr × $20 + tips, both nights)</td><td class="num">$2,400</td></tr>
+      <tr><td colspan="2">Venue ops (utilities, supplies, insurance amortized)</td><td class="num">$1,400</td></tr>
+      <tr><td colspan="2">F&amp;B inventory float (recouped immediately)</td><td class="num">$2,000</td></tr>
+      <tr><td colspan="2">Working reserve (contingency, settles into next show)</td><td class="num">$1,200</td></tr>
+      <tr><td colspan="2"><strong>TOTAL CAPITAL DEPLOYED — JULY</strong></td><td class="num"><strong>$10,000</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p class="small">Heath Hyche projected gross at 60% sellthrough (debut show, conservative): tickets $8.4K + F&amp;B $5.2K = $13.6K. Less F&amp;B COGS $1.5K, Square fees $480, opener $300. Net per night ~$11K. Two nights ~$22K — bringing total working capital after July weekend 1 to ~$32K. Three weekends in July = ~$55K end-of-month working capital.</p>
+
+  <div class="summary-box">
+    <strong>The snowball is the entire thesis.</strong> Every booking decision is gated by current working capital. We never overcommit talent fees against future revenue — we book within bank.
+  </div>
+</section>
+
+<!-- =========== BANG FOR BUCK =========== -->
+<section class="page-break">
+  <h2>Bang-For-Buck ROI Ranking</h2>
+
+  <p>For every shortlisted comedian, we calculate: <strong>(estimated gate revenue per 2-show night) ÷ (talent fee)</strong>. Higher = more profit per dollar of talent spend. This rules out comics whose fees outrun their draw — even if they're famous.</p>
+
+  <h3>Top-15 ROI ranking (validated picks · all bookable for 200-cap)</h3>
+  <table>
+    <thead>
+      <tr><th>Rank</th><th>Comedian</th><th>Fit</th><th class="num">Gate est.</th><th class="num">Fee est.</th><th class="num">Ratio</th><th>Verdict</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Heath Hyche</strong> ⭐</td><td>AL native, Blue Collar TV</td><td class="num">$5,400</td><td class="num">$1,500</td><td class="num roi-strong">3.60</td><td>Top ratio · Use 2× in run</td></tr>
+      <tr><td>2</td><td><strong>Mark Chalifoux</strong></td><td>Dry Bar, Nateland</td><td class="num">$12,600</td><td class="num">$4,000</td><td class="num roi-strong">3.15</td><td>Solid Tier B value</td></tr>
+      <tr><td>3</td><td><strong>Aaron Weber</strong></td><td>Opry, Nateland co-host</td><td class="num">$14,720</td><td class="num">$5,000</td><td class="num roi-strong">2.94</td><td>Ramp anchor · 2× in run</td></tr>
+      <tr><td>4</td><td><strong>Adam Minnick</strong></td><td>Dry Bar Provo, Nateland</td><td class="num">$8,800</td><td class="num">$3,000</td><td class="num roi-strong">2.93</td><td>Cheapest viable Tier B</td></tr>
+      <tr><td>5</td><td><strong>Dustin Nickerson</strong></td><td>Comedy Central, Netflix, clean</td><td class="num">$14,720</td><td class="num">$5,500</td><td class="num roi-strong">2.68</td><td>Strong rebooker · 2× in run</td></tr>
+      <tr><td>6</td><td>Drew Morgan + CRF</td><td>WellRED co-headline pair</td><td class="num">$13,500</td><td class="num">$6,500</td><td class="num">2.08</td><td>Pairs cheap, warms Trae</td></tr>
+      <tr><td>7</td><td><strong>Tony Baker</strong> ⭐</td><td>StarDome routing, Black/country crossover</td><td class="num">$13,000</td><td class="num">$7,000</td><td class="num">1.86</td><td>Mobile reach without Karlous tier fee</td></tr>
+      <tr><td>8</td><td><strong>Phil Hanley</strong> ⭐</td><td>JRE, Comedy Cellar, Birmingham routing</td><td class="num">$17,700</td><td class="num">$10,000</td><td class="num">1.77</td><td>Premium ticket pricing offsets fee</td></tr>
+      <tr><td>9</td><td>Ryan Hamilton</td><td>Netflix special, clean</td><td class="num">$11,500</td><td class="num">$6,500</td><td class="num">1.77</td><td>Family-friendly fill</td></tr>
+      <tr><td>10</td><td>Lace Larrabee</td><td>AGT, Atlanta, female lead</td><td class="num">$9,000</td><td class="num">$5,500</td><td class="num">1.64</td><td>Female-demo pull</td></tr>
+      <tr><td>11</td><td>Mary Mack</td><td>NPR favorite, female alt</td><td class="num">$8,000</td><td class="num">$5,000</td><td class="num">1.60</td><td>Backup female</td></tr>
+      <tr><td>12</td><td>Karlous Miller</td><td>85 South Show, Mobile reach</td><td class="num">$20,000</td><td class="num">$12,500</td><td class="num">1.60</td><td>Pricier than Tony Baker, larger draw</td></tr>
+      <tr><td>13</td><td>⭐ <strong>Killer Beaz</strong></td><td>Tier A anchor</td><td class="num">$24,000</td><td class="num">$20,000</td><td class="num">1.20</td><td>Anchor — pays in brand, not unit ratio</td></tr>
+      <tr><td>14</td><td>⭐ <strong>Dusty Slay</strong></td><td>Tier A anchor, AL native</td><td class="num">$14,400</td><td class="num">$12,000</td><td class="num">1.20</td><td>Anchor</td></tr>
+      <tr><td>15</td><td>⭐ <strong>Trae Crowder</strong></td><td>Tier A anchor + festival announce</td><td class="num">$24,000</td><td class="num">$20,000</td><td class="num">1.20</td><td>Anchor + festival launch</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Considered, REJECTED on ROI</h3>
+  <table>
+    <thead><tr><th>Comedian</th><th>Reason rejected</th><th class="num">Fee</th><th class="num">Ratio</th></tr></thead>
+    <tbody>
+      <tr><td>Trey Kennedy</td><td>Already plays mid-theaters; corporate $25K+; ratio &lt; 1.0 at 200-cap</td><td class="num">$25,000</td><td class="num roi-weak">0.88</td></tr>
+      <tr><td>Hans Kim (Kill Tony)</td><td>Now plays 2,400-cap rooms at $91–$149 tickets — outgrew us</td><td class="num">$25,000+</td><td class="num roi-weak">0.85</td></tr>
+      <tr><td>William Montgomery</td><td>Touring as part of "Killers of Kill Tony" package only — not solo for our scale</td><td class="num">$20,000+</td><td class="num roi-weak">0.95</td></tr>
+      <tr><td>Stavros Halkias</td><td>"Dreamboat Tour" 2026 plays 1,000–2,500 cap theaters — outgrew 200-cap</td><td class="num">$30,000+</td><td class="num roi-weak">1.09</td></tr>
+      <tr><td>Andrew Santino + Bobby Lee (Bad Friends)</td><td>Arena-tier, $100K+ each, Netflix Joke Fest tier</td><td class="num">$100,000+</td><td class="num roi-weak">N/A</td></tr>
+      <tr><td>Tucker Wetmore</td><td>Country artist — first world headline tour 2026, will be arena by April 2027</td><td class="num">$300,000+</td><td class="num roi-weak">N/A</td></tr>
+      <tr><td>Druski</td><td>Hosting 2026 BET Awards, 10M+ followers — entirely out of reach</td><td class="num">$100,000+</td><td class="num roi-weak">N/A</td></tr>
+      <tr><td>Gary Owen</td><td>"No Hard Feelings" first major theater tour 2026 — &gt;1,500 cap</td><td class="num">$30,000+</td><td class="num roi-weak">1.10</td></tr>
+      <tr><td>Bert Kreischer / Tom Segura / Theo Von</td><td>All arena-tier, $50K–$150K+ — out of reach by an order of magnitude</td><td class="num">$50,000+</td><td class="num roi-weak">N/A</td></tr>
+      <tr><td>Nate Bargatze / Shane Gillis</td><td>Arena tour 2026, Netflix Joke Fest, $100K+</td><td class="num">$100,000+</td><td class="num roi-weak">N/A</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Local discovery channel — Compton Smith network</h3>
+  <p>For Tier C/local circuit comedians (~$300–$1,500 talent, used to fill cadence and grow email list), the operational gatekeeper is <strong>Compton Smith</strong>. He founded both <strong>Smokey Jokes Comedy Mobile</strong> and <strong>Stingers Comedy Pensacola</strong> — meaning he runs the local-circuit talent flow for our exact corridor. Direct relationship-building with Smith unlocks a steady supply of 5–10 vetted local headliners we can rotate in cheap.</p>
+
+  <p>Other local discovery sources:</p>
+  <ul>
+    <li><strong>Crescent Theater Mobile</strong> — books Jeremiah Watkins, Jen Kober, Karen Morgan tier (mid-tier benchmark, $3K–$8K)</li>
+    <li><strong>StarDome Comedy Club Birmingham</strong> — &quot;Alabama&apos;s Funniest Person Competition&quot; summer 2026, winner gets $3,500 — direct talent pipeline of vetted Alabama comics</li>
+    <li><strong>Pensacola Indie Fringe Comedy Festival</strong> (comedypensacola.com) — annual lineup is a discovery board for emerging Gulf-Coast circuit comics</li>
+    <li><strong>Soul Kitchen Mobile</strong> — &quot;Moms Unhinged Standup Comedy Show&quot; April 2026, indie/touring lineup signal</li>
+    <li><strong>Pensacola Saenger Theatre</strong> — Sal Vulcano (May 15), Daniel Tosh (Oct 9), Jim Gaffigan tier benchmarks for what the corridor will support at premium pricing</li>
+  </ul>
+</section>
+
+<!-- =========== UNIT ECONOMICS =========== -->
+<section class="page-break">
+  <h2>Per-Show Unit Economics</h2>
+
+  <h3>Pricing structure (every show)</h3>
+  <table>
+    <thead>
+      <tr><th>Tier</th><th>Section</th><th>Cap / Show</th><th class="num">Price</th><th>F&amp;B Min.</th><th class="num">Effective</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>GA</td><td>Downstairs general</td><td>140</td><td class="num">$35</td><td>2 items ($25)</td><td class="num">$60</td></tr>
+      <tr><td>Reserved</td><td>Front 3 rows / hi-tops</td><td>40</td><td class="num">$55</td><td>2 items ($25)</td><td class="num">$80</td></tr>
+      <tr><td>VIP</td><td>Upstairs lounge w/ bar</td><td>20</td><td class="num">$95</td><td>signature drink + apps</td><td class="num">$95</td></tr>
+      <tr><td colspan="2"><strong>Total / show</strong></td><td><strong>200</strong></td><td colspan="2"></td><td class="num"><strong>$66 avg</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p class="small"><strong>Anchor weekend pricing premium:</strong> Tier A nights step up to GA $50 / Reserved $75 / VIP $125 — premium pricing absorbs the higher talent fee while signaling event scarcity.</p>
+
+  <h3>P&amp;L by tier — single Friday night, 2 shows</h3>
+  <table>
+    <thead><tr><th>Tier</th><th>Talent</th><th>Sellthrough</th><th class="num">Gross</th><th class="num">Costs</th><th class="num">Net</th></tr></thead>
+    <tbody>
+      <tr><td class="tier-c">Tier C / Heath Hyche debut</td><td>$1,500</td><td>60%</td><td class="num">$13,600</td><td class="num">$5,500</td><td class="num">$8,100</td></tr>
+      <tr><td class="tier-b">Tier B (Aaron Weber, Mark Chalifoux)</td><td>$5,000</td><td>80%</td><td class="num">$25,120</td><td class="num">$11,627</td><td class="num">$13,493</td></tr>
+      <tr><td class="tier-b">Tier B premium (Phil Hanley, Tony Baker)</td><td>$8,500</td><td>80%</td><td class="num">$25,120</td><td class="num">$15,000</td><td class="num">$10,120</td></tr>
+      <tr><td class="tier-b">Tier B+ Mobile (Karlous Miller)</td><td>$12,500</td><td>85%</td><td class="num">$28,400</td><td class="num">$19,500</td><td class="num">$8,900</td></tr>
+      <tr><td class="tier-a">Tier A anchor (premium $50/75/125 pricing)</td><td>$20,000</td><td>95%</td><td class="num">$41,040</td><td class="num">$28,000</td><td class="num">$13,040</td></tr>
+    </tbody>
+  </table>
+
+  <p class="small"><strong>Why anchor net is comparable to Tier B:</strong> the talent fee scales with draw, so absolute net per night doesn't change as dramatically as gross. Anchors deliver value through premium ticket-price elasticity, brand halo, email-list acceleration, and city-government trust — not unit economics alone.</p>
+</section>
+
+<!-- =========== SCHEDULE V2 =========== -->
+<section class="page-break">
+  <h2>The 8-Month Schedule (v2 · Snowball-Sequenced)</h2>
+
+  <p>3 weekends booked per month, 1 weekend held back for private rentals or reserve programming. Each weekend = Friday + Saturday × 2 shows = 4 shows. Anchors gated by capital sequencing rule (§ above).</p>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">JULY 2026 — BOOTSTRAP</span><span class="month-tag">$10K → $55K</span></div>
+    <div class="month-cap">Capital ceiling per booking: $3,000 · Goal: validate ops + grow email list</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Jul 10</td><td>Jul 11</td><td>⭐ <strong>Heath Hyche</strong> (Birmingham AL native, Blue Collar TV)</td><td><span class="tag tag-bang">B Bang</span></td><td class="num">$2,000</td><td class="num">$22,000</td></tr>
+        <tr><td>2</td><td>Jul 17</td><td>Jul 18</td><td>Local Mobile/Pensacola circuit (via Compton Smith)</td><td><span class="tag tag-local">C Local</span></td><td class="num">$800</td><td class="num">$15,000</td></tr>
+        <tr><td>3</td><td>Jul 24</td><td>Jul 25</td><td><strong>Adam Minnick</strong> (Dry Bar/Nateland)</td><td><span class="tag tag-b">B</span></td><td class="num">$2,500</td><td class="num">$18,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent total:</strong> $5,300 · <strong>Net:</strong> ~$45,000 · <strong>Why this lineup:</strong> Heath Hyche opens because he's an Alabama-native marketing story (TV credits give Meta-ad legitimacy); cheap fee fits within $10K bootstrap. Local week 2 builds email list with Mobile/Pensacola fan base. Adam Minnick proves repeat-Tier-B economics at the cheapest viable tier.</p>
+  </div>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">AUGUST 2026 — TIER B OPENING</span><span class="month-tag">$55K → $115K</span></div>
+    <div class="month-cap">Capital ceiling: $6,000 · Goal: establish Tier B sellthrough baseline</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Aug 7</td><td>Aug 8</td><td>⭐ <strong>Aaron Weber</strong> (Opry/Nateland, JFL)</td><td><span class="tag tag-b">B</span></td><td class="num">$5,000</td><td class="num">$25,800</td></tr>
+        <tr><td>2</td><td>Aug 14</td><td>Aug 15</td><td>Local Mobile/Pensacola (Compton Smith network)</td><td><span class="tag tag-local">C Local</span></td><td class="num">$800</td><td class="num">$15,000</td></tr>
+        <tr><td>3</td><td>Aug 21</td><td>Aug 22</td><td><strong>Mark Chalifoux</strong> (Dry Bar, Nateland)</td><td><span class="tag tag-b">B</span></td><td class="num">$4,000</td><td class="num">$24,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent:</strong> $9,800 · <strong>Net:</strong> ~$60,000 · <strong>Why:</strong> Aaron Weber is the brand-establishing Tier B booking (Opry credit signals quality). Mark Chalifoux fills cheap with strong Dry Bar pedigree.</p>
+  </div>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">SEPTEMBER 2026 — PHIL HANLEY + LACE</span><span class="month-tag">$115K → $190K</span></div>
+    <div class="month-cap">Capital ceiling: $10,000 · Goal: First premium-priced Tier B (Phil Hanley) + female demo</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Sep 4</td><td>Sep 5</td><td>⭐ <strong>Phil Hanley</strong> (JRE, Comedy Cellar, Birmingham routing)</td><td><span class="tag tag-bang">B Bang</span></td><td class="num">$10,000</td><td class="num">$24,000</td></tr>
+        <tr><td>2</td><td>Sep 11</td><td>Sep 12</td><td><strong>Lace Larrabee</strong> (AGT, Atlanta)</td><td><span class="tag tag-female">B Female</span></td><td class="num">$5,500</td><td class="num">$25,000</td></tr>
+        <tr><td>3</td><td>Sep 18</td><td>Sep 19</td><td>Local Mobile/Pensacola</td><td><span class="tag tag-local">C Local</span></td><td class="num">$800</td><td class="num">$15,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent:</strong> $16,300 · <strong>Net:</strong> ~$75,000 · <strong>Why:</strong> Phil Hanley is the JRE/Comedy Cellar legitimacy moment — he attracts the young-male podcast-fan demographic we don't otherwise reach. He's already routing through Birmingham (StarDome, March 2026) so Saraland is a natural add. Lace Larrabee captures the female 25–55 audience.</p>
+  </div>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">OCTOBER 2026 — DUSTIN + TONY BAKER</span><span class="month-tag">$190K → $270K</span></div>
+    <div class="month-cap">Capital ceiling: $10,000 · Goal: Clean Tier B + Mobile-reach via Tony Baker</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Oct 2</td><td>Oct 3</td><td><strong>Dustin Nickerson</strong> (Comedy Central, Netflix, clean)</td><td><span class="tag tag-b">B</span></td><td class="num">$5,500</td><td class="num">$26,500</td></tr>
+        <tr><td>2</td><td>Oct 9</td><td>Oct 10</td><td>⭐ <strong>Tony Baker</strong> (StarDome routing, Black/country crossover)</td><td><span class="tag tag-bang">B Bang</span></td><td class="num">$7,000</td><td class="num">$25,000</td></tr>
+        <tr><td>3</td><td>Oct 16</td><td>Oct 17</td><td>Local Mobile/Pensacola</td><td><span class="tag tag-local">C Local</span></td><td class="num">$800</td><td class="num">$15,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent:</strong> $13,300 · <strong>Net:</strong> ~$80,000 · <strong>Why:</strong> Dustin Nickerson lands the family/clean audience for the holiday season ramp. Tony Baker is the Mobile-reach play at lower cost than Karlous Miller — TikTok-driven Black/country crossover, plays similar venues to StarDome.</p>
+  </div>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">NOVEMBER 2026 — Q3 ANCHOR ⭐ KILLER BEAZ</span><span class="month-tag">$270K → $360K</span></div>
+    <div class="month-cap">Capital ceiling: $20,000 · Goal: First Tier A anchor</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Nov 6</td><td>Nov 7</td><td><strong>Drew Morgan + Corey Ryan Forrester</strong> (WellRED, warms Trae)</td><td><span class="tag tag-b">B Pair</span></td><td class="num">$6,500</td><td class="num">$27,000</td></tr>
+        <tr><td>2</td><td>Nov 13</td><td>Nov 14</td><td>⭐ <strong>Heath Hyche RETURNS</strong> (rebook · AL local pride)</td><td><span class="tag tag-bang">B Bang</span></td><td class="num">$3,000</td><td class="num">$23,000</td></tr>
+        <tr><td>3</td><td>Nov 20</td><td>Nov 21</td><td>⭐⭐ <strong>KILLER BEAZ</strong> (TIER A ANCHOR)</td><td><span class="tag tag-a">A ANCHOR</span></td><td class="num">$20,000</td><td class="num">$40,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent:</strong> $29,500 · <strong>Net:</strong> ~$90,000 · <strong>Why:</strong> Working capital ($270K) now safely supports a $20K anchor (4× rule = $80K minimum). Killer Beaz is the Southern Gulf Coast legend who gives investors the &quot;real names play here&quot; data point. Heath Hyche returns at slight premium ($3K vs $2K July) — proves repeat-booking rate elasticity.</p>
+  </div>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">DECEMBER 2026 — KARLOUS + HOLIDAY</span><span class="month-tag">$360K → $430K</span></div>
+    <div class="month-cap">Capital ceiling: $15,000 · Goal: Mobile reach, holiday programming</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Dec 4</td><td>Dec 5</td><td><strong>Karlous Miller</strong> (85 South, Mobile reach)</td><td><span class="tag tag-d">B+ Mobile</span></td><td class="num">$12,500</td><td class="num">$24,000</td></tr>
+        <tr><td>2</td><td>Dec 11</td><td>Dec 12</td><td><strong>Aaron Weber RETURNS</strong> (Country Christmas Comedy)</td><td><span class="tag tag-b">B</span></td><td class="num">$6,000</td><td class="num">$26,500</td></tr>
+        <tr><td>3</td><td>Dec 18</td><td>Dec 19</td><td>Local Mobile/Pensacola (holiday-themed)</td><td><span class="tag tag-local">C Local</span></td><td class="num">$800</td><td class="num">$15,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent:</strong> $19,300 · <strong>Net:</strong> ~$66,000 · <strong>Why:</strong> Karlous Miller cements Mobile-side audience presence. Aaron Weber returns as the proven Tier B at slight premium ($6K vs $5K July). December has private-rental crossover — comedy programming intentionally scaled-down to leave space for J Rodgers BBQ corporate holiday party catering.</p>
+  </div>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">JANUARY 2027 — Q4 ANCHOR ⭐ DUSTY SLAY</span><span class="month-tag">$430K → $515K</span></div>
+    <div class="month-cap">Capital ceiling: $20,000 · Goal: Premium Alabama-native anchor</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Jan 8</td><td>Jan 9</td><td><strong>Ryan Hamilton</strong> (clean, Netflix special)</td><td><span class="tag tag-b">B</span></td><td class="num">$6,500</td><td class="num">$24,000</td></tr>
+        <tr><td>2</td><td>Jan 15</td><td>Jan 16</td><td>Local Mobile/Pensacola</td><td><span class="tag tag-local">C Local</span></td><td class="num">$800</td><td class="num">$16,000</td></tr>
+        <tr><td>3</td><td>Jan 22</td><td>Jan 23</td><td>⭐⭐ <strong>DUSTY SLAY</strong> (Tier A · AL home-state)</td><td><span class="tag tag-a">A ANCHOR</span></td><td class="num">$12,000</td><td class="num">$40,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent:</strong> $19,300 · <strong>Net:</strong> ~$80,000 · <strong>Why:</strong> Dusty Slay at home-state premium ticket pricing. His Alabama-born story is the emotional pitch — comedy fans drive an hour from Mobile/Pensacola because Saraland is bringing back a hometown name. Backup: Henry Cho if Dusty unavailable.</p>
+  </div>
+
+  <div class="month-block">
+    <div class="month-header"><span class="month-name">FEBRUARY 2027 — TRAE CROWDER + FESTIVAL ANNOUNCEMENT</span><span class="month-tag">$515K → $590K</span></div>
+    <div class="month-cap">Capital ceiling: $25,000 · Goal: Final anchor + April 2027 festival on-stage launch</div>
+    <table>
+      <thead><tr><th>Wknd</th><th>Friday</th><th>Saturday</th><th>Comedian</th><th>Tier</th><th class="num">Talent</th><th class="num">Net wknd</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Feb 5</td><td>Feb 6</td><td><strong>Dustin Nickerson RETURNS</strong> (rebook from Oct)</td><td><span class="tag tag-b">B</span></td><td class="num">$5,500</td><td class="num">$26,500</td></tr>
+        <tr><td>2</td><td>Feb 12</td><td>Feb 13</td><td><strong>Mary Mack</strong> (alt female / NPR audience)</td><td><span class="tag tag-female">B Female</span></td><td class="num">$5,000</td><td class="num">$23,000</td></tr>
+        <tr><td>3</td><td>Feb 19</td><td>Feb 20</td><td>⭐⭐ <strong>TRAE CROWDER</strong> + FESTIVAL ANNOUNCEMENT</td><td><span class="tag tag-a">A ANCHOR + LAUNCH</span></td><td class="num">$20,000</td><td class="num">$40,000</td></tr>
+      </tbody>
+    </table>
+    <p class="small"><strong>Talent:</strong> $30,500 · <strong>Net:</strong> ~$89,500 · <strong>Why:</strong> Trae Crowder closes the comedy series. Festival announced from his stage exit — co-branded press moment. Comedy crowd presale tickets at 15% discount. Cap on a high.</p>
+  </div>
+
+  <div class="net-callout">
+    <div class="figure">$590K</div>
+    <div class="label">Sum of weekend-net forecasts (24 weekends × ~$24.6K avg)</div>
+    <div class="figure" style="margin-top: 14pt;">$413K</div>
+    <div class="label">Conservative working forecast — 30% buffer for ramp loss + sellthrough variance + overhead allocation</div>
+  </div>
+
+  <h3>Talent budget summary</h3>
+  <table>
+    <thead><tr><th>Month</th><th class="num">Talent</th><th class="num">Forecast Net</th><th>Notable bookings</th></tr></thead>
+    <tbody>
+      <tr><td>July 2026</td><td class="num">$5,300</td><td class="num">$45,000</td><td>Heath Hyche (debut), Adam Minnick</td></tr>
+      <tr><td>August</td><td class="num">$9,800</td><td class="num">$60,000</td><td>Aaron Weber, Mark Chalifoux</td></tr>
+      <tr><td>September</td><td class="num">$16,300</td><td class="num">$75,000</td><td><strong>Phil Hanley</strong>, Lace Larrabee</td></tr>
+      <tr><td>October</td><td class="num">$13,300</td><td class="num">$80,000</td><td>Dustin Nickerson, <strong>Tony Baker</strong></td></tr>
+      <tr><td>November</td><td class="num">$29,500</td><td class="num">$90,000</td><td>WellRED pair, Heath Hyche return, ⭐ <strong>KILLER BEAZ</strong></td></tr>
+      <tr><td>December</td><td class="num">$19,300</td><td class="num">$66,000</td><td>Karlous Miller, Aaron Weber return</td></tr>
+      <tr><td>January 2027</td><td class="num">$19,300</td><td class="num">$80,000</td><td>Ryan Hamilton, ⭐ <strong>DUSTY SLAY</strong></td></tr>
+      <tr><td>February</td><td class="num">$30,500</td><td class="num">$89,500</td><td>Dustin return, Mary Mack, ⭐⭐ <strong>TRAE CROWDER</strong> + Festival launch</td></tr>
+      <tr><td><strong>TOTALS</strong></td><td class="num"><strong>$143,300</strong></td><td class="num"><strong>$585,500</strong></td><td>14 priority comedians · 48 shows · 3 Tier A anchors</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- =========== COMEDIAN PROFILES =========== -->
+<section class="page-break">
+  <h2>Comedian Profiles (ROI-ranked)</h2>
+  <p class="muted">All fee ranges are research-based estimates (Pollstar, Funny Business Agency, NathanTimmel, Grable Group, Helium, MN2S, StarDome public listings). Direct-to-agency rates run 30–50% lower than corporate-bureau quotes — never source through speaker-bureau aggregators (celebrity-talent.net, allamericanspeakers).</p>
+
+  <h3 style="margin-top: 16pt;">⭐ TOP BANG-FOR-BUCK PICKS (newly added in v2)</h3>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Heath Hyche <span class="tag tag-bang" style="margin-left: 6pt;">BANG-FOR-BUCK · DEBUT</span></div>
+        <div class="meta-line">Birmingham AL native · Blue Collar TV (with Foxworthy/Larry/Engvall) · Tonight Show w/ Jay Leno · opened for Brooks &amp; Dunn, Wynonna Judd, Michael Bublé, Ray Charles</div>
+      </div>
+      <div class="fee-block">
+        <div class="fee">$1,500–$3K</div>
+        <div class="fee-label">Estimated</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>TAD Management (tadmgmt.com)<br/>Summit Comedy<br/>Fusion Talent Group<br/>ComedyWorks Entertainment</div>
+      <div><span class="lbl">Suggested shows</span>2 weekends (July debut + November return) = <strong>8 shows</strong></div>
+      <div><span class="lbl">Forecast net</span>$22K (debut) + $23K (return) = <strong>$45K total</strong></div>
+      <div><span class="lbl">ROI ratio</span><strong style="color:#2e7d32; font-size:14pt;">3.60</strong> (highest in lineup)</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> The single most strategically important booking in the entire run. Birmingham native opens us with an Alabama-pride story; Blue Collar TV alongside Foxworthy/Larry/Engvall gives us the country-comedy lineage signal; Tonight Show credit is Meta-ad legitimacy. He'll likely take this date because it's a home-state run-up to his bigger touring. Cheapest viable Tier B with the strongest local marketing story — debut him to anchor the launch, return him in November as proven repeat draw.</div>
+    <div class="roi-bar">⭐ Best bang-for-buck pick on the entire lineup.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Phil Hanley <span class="tag tag-bang" style="margin-left: 6pt;">BANG-FOR-BUCK</span></div>
+        <div class="meta-line">JRE guest · Comedy Cellar regular · Dyslexia bit went viral · 2026 tour mixes clubs and theaters</div>
+      </div>
+      <div class="fee-block">
+        <div class="fee">$7K–$12K</div>
+        <div class="fee-label">Club rate</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>philhanley.com contact form<br/>WME or Avalon (depending on his current rep)<br/><strong>Avoid:</strong> AllAmericanSpeakers ($25K+ corp rate)</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · September 2026</div>
+      <div><span class="lbl">Forecast net</span><strong>$24,000 / weekend</strong> at 80% sellthrough (premium $50 GA pricing)</div>
+      <div><span class="lbl">ROI ratio</span><strong style="color:#2e7d32; font-size:13pt;">1.77</strong></div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Phil's already routing through Alabama in 2026 — he plays StarDome Birmingham (March 26, 2026) at $43–$94 tickets. Saraland is a natural detour add. JRE pull brings the young-male podcast-fan demographic we don't otherwise reach. His audience pays $50–$70 / ticket willingly. Premium pricing absorbs the higher fee.</div>
+    <div class="roi-bar">⭐ JRE-driven podcast pull at club-rate fee. Top podcast-comic value.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Tony Baker <span class="tag tag-bang" style="margin-left: 6pt;">BANG-FOR-BUCK · MOBILE REACH</span></div>
+        <div class="meta-line">TikTok-driven · Black/country crossover · "Bald Brothers" with KevOnz · plays StarDome Birmingham 2026</div>
+      </div>
+      <div class="fee-block">
+        <div class="fee">$5K–$10K</div>
+        <div class="fee-label">Estimated</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>tonybakercomedy.com/book-tony (direct)<br/>Booking page lists rate inquiry form</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · October 2026</div>
+      <div><span class="lbl">Forecast net</span><strong>$25,000 / weekend</strong> at 75% sellthrough · $47–$62 ticket avg</div>
+      <div><span class="lbl">ROI ratio</span><strong style="color:#2e7d32; font-size:13pt;">1.86</strong></div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Tony Baker is the Mobile-reach play at half the cost of Karlous Miller. Currently routing through StarDome Birmingham 2026 — Saraland fits the same swing. TikTok audience is Black + country-blue-collar crossover (a specific demographic that fits the Saraland white core + Mobile Black-market blend perfectly). His VIP packages already run $109–$150 — pricing power exists.</div>
+    <div class="roi-bar">⭐ Best Mobile-reach booking by ROI.</div>
+  </div>
+
+  <h3 style="margin-top: 22pt;">TIER A — Anchor Headliners</h3>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Killer Beaz <span class="tag tag-a" style="margin-left: 6pt;">TIER A · NOV ANCHOR</span></div>
+        <div class="meta-line">Discovery's <em>Moonshiners</em> · Grand Ole Opry regular · Veteran Southern stand-up</div>
+      </div>
+      <div class="fee-block"><div class="fee">$15K–$25K</div><div class="fee-label">Club rate</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>killerbeaz.com<br/>A to Z Entertainment (888-655-4575)</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · Nov 20-21, 2026</div>
+      <div><span class="lbl">Forecast net</span><strong>$40,000 / weekend</strong> at 95% sellthrough · premium pricing</div>
+      <div><span class="lbl">ROI ratio</span>1.20 (anchor — pays in brand)</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Southern Gulf Coast legend. Moonshiners + Opry credentials. He'll sell out both shows. First Tier A anchor — proves to the city government and investors that the venue can host real names.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Dusty Slay <span class="tag tag-a" style="margin-left: 6pt;">TIER A · JAN ANCHOR</span></div>
+        <div class="meta-line">Alabama-born · Nashville-based · Tonight Show · Nateland · Clean Southern</div>
+      </div>
+      <div class="fee-block"><div class="fee">$7K–$15K</div><div class="fee-label">Club rate via MN2S</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span><strong>MN2S Talent</strong> (mn2s.com — confirmed roster)<br/>Agents: Jackie K., Andrew L., Nick N.<br/>Backup: Central Talent Booking</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · Jan 22-23, 2027</div>
+      <div><span class="lbl">Forecast net</span><strong>$40,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span>1.20 (home-state premium)</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Home-state pride card — Dusty is from Alabama. Pitch as a CLUB booking (corporate quotes are $25K+ via aggregators; direct via MN2S gets the real club rate). Highest single-booking marketing story value in the lineup.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Trae Crowder <span class="tag tag-a" style="margin-left: 6pt;">TIER A · FEB FINALE</span></div>
+        <div class="meta-line">"The Liberal Redneck" · Tennessee · Solo 2026 tour · WellRED Comedy</div>
+      </div>
+      <div class="fee-block"><div class="fee">$15K–$25K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>traecrowdertour.com<br/>WellRED Comedy management</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · Feb 19-20, 2027</div>
+      <div><span class="lbl">Forecast net</span><strong>$40,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span>1.20 + festival launch leverage</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Closes the comedy series and doubles as the country festival announcement. His progressive-Southern audience overlaps with festival-going millennials = our biggest single-day-pass segment.</div>
+  </div>
+
+  <h3 style="margin-top: 22pt;">TIER B — Touring Headliners (the workhorses)</h3>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Aaron Weber <span class="tag tag-b" style="margin-left: 6pt;">TIER B · 2× IN RUN</span></div>
+        <div class="meta-line">Grand Ole Opry · Nateland co-host · JFL New Face 2021</div>
+      </div>
+      <div class="fee-block"><div class="fee">$5K–$8K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>MN2S · or via Nateland / Zanies Nashville</div>
+      <div><span class="lbl">Suggested shows</span>2 weekends (Aug + Dec) = <strong>8 shows</strong></div>
+      <div><span class="lbl">Forecast net</span>$25,800 + $26,500 = <strong>$52,300</strong></div>
+      <div><span class="lbl">ROI ratio</span><strong style="color:#2e7d32; font-size:13pt;">2.94</strong></div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Safest brand-establishing Tier B. Opry credit + Nateland connection + JFL credit + clean-leaning Southern voice. Routes cleanly from Nashville through Saraland. Highest ROI of the touring headliners.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Dustin Nickerson <span class="tag tag-b" style="margin-left: 6pt;">TIER B · CLEAN · 2× IN RUN</span></div>
+        <div class="meta-line">Comedy Central + Netflix · Clean comedy specialist · Family-friendly</div>
+      </div>
+      <div class="fee-block"><div class="fee">$4K–$7K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span><strong>The Grable Group</strong> (clean comedy specialists)</div>
+      <div><span class="lbl">Suggested shows</span>2 weekends (Oct + Feb) = <strong>8 shows</strong></div>
+      <div><span class="lbl">Forecast net</span>$26,500 + $26,500 = <strong>$53,000</strong></div>
+      <div><span class="lbl">ROI ratio</span><strong style="color:#2e7d32; font-size:13pt;">2.68</strong></div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Clean comedy with TV credits. Married 30–55 demographic with kids — Saraland's exact audience. Strong rebook candidate. The Grable Group is easier to reach than a major agency.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Mark Chalifoux <span class="tag tag-b" style="margin-left: 6pt;">TIER B · DRY BAR</span></div>
+        <div class="meta-line">Dry Bar special · Featured on Nateland · Midwest blue-collar voice</div>
+      </div>
+      <div class="fee-block"><div class="fee">$3K–$5K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>Funny Business Agency · A to Z Entertainment</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · August 2026</div>
+      <div><span class="lbl">Forecast net</span><strong>$24,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span><strong style="color:#2e7d32; font-size:13pt;">3.15</strong></div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Cheaper than the Nashville-circle headliners but plays the same audience. Dry Bar credit = strong family-show signal. High ratio.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Adam Minnick <span class="tag tag-b" style="margin-left: 6pt;">TIER B · CHEAPEST VIABLE</span></div>
+        <div class="meta-line">Dry Bar Comedy Club Provo regular · Nateland · Emerging</div>
+      </div>
+      <div class="fee-block"><div class="fee">$2K–$4K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>Direct via Dry Bar Comedy network · Nateland Nashville desk</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · July 2026 ramp</div>
+      <div><span class="lbl">Forecast net</span><strong>$18,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span><strong style="color:#2e7d32; font-size:13pt;">2.93</strong></div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Cheapest Tier B option. Dry Bar credit signals quality. Used in July ramp; fits within $10K starting capital ceiling.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Drew Morgan + Corey Ryan Forrester <span class="tag tag-b" style="margin-left: 6pt;">TIER B · CO-HEADLINE</span></div>
+        <div class="meta-line">WellRED Comedy · Liberal Redneck universe · Southern progressive</div>
+      </div>
+      <div class="fee-block"><div class="fee">$5K–$8K combined</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>WellRED Comedy mgmt (same as Trae Crowder)</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · November 2026</div>
+      <div><span class="lbl">Forecast net</span><strong>$27,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span><strong>2.08</strong></div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Two-for-one talent. Co-authors of "The Liberal Redneck Manifesto" + WellRED podcast hosts. Builds the audience that returns for Trae Crowder in February.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Lace Larrabee <span class="tag tag-female" style="margin-left: 6pt;">TIER B · FEMALE LEAD</span></div>
+        <div class="meta-line">Atlanta · AGT Season 17 semifinalist · Former Southern beauty queen</div>
+      </div>
+      <div class="fee-block"><div class="fee">$4K–$7K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>lacelarrabee.com contact form</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · September 2026</div>
+      <div><span class="lbl">Forecast net</span><strong>$25,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span>1.64</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Most touring Southern comedy is male-led; Lace gives us girls'-night-out marketing and a bachelorette-party draw. AGT credit = Meta-ad legitimacy.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Ryan Hamilton <span class="tag tag-b" style="margin-left: 6pt;">TIER B · CLEAN</span></div>
+        <div class="meta-line">Idaho · Netflix special "Happy Face" · Clean, observational</div>
+      </div>
+      <div class="fee-block"><div class="fee">$5K–$8K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>ryanhamiltoncomedy.com · WME comedy desk</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · January 2027</div>
+      <div><span class="lbl">Forecast net</span><strong>$24,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span>1.77</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Netflix special holder, clean-audience appeal. Family-show pull. Differentiates from Nateland storytelling style.</div>
+  </div>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Mary Mack <span class="tag tag-female" style="margin-left: 6pt;">TIER B · FEMALE ALT</span></div>
+        <div class="meta-line">Quirky storyteller · NPR favorite · Multi-instrumentalist</div>
+      </div>
+      <div class="fee-block"><div class="fee">$4K–$7K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>marymackcomedy.com · NPR / public-radio circuit</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · February 2027</div>
+      <div><span class="lbl">Forecast net</span><strong>$23,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span>1.60</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Backup female-lead if Lace Larrabee unavailable. Reaches older female demo (35–60). NPR audience = high-spend, high-loyalty.</div>
+  </div>
+
+  <h3 style="margin-top: 22pt;">TIER B+ Mobile / Black Audience Reach</h3>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Karlous Miller <span class="tag tag-d" style="margin-left: 6pt;">B+ · 85 SOUTH</span></div>
+        <div class="meta-line">85 South Show co-host · Atlanta · Wild N Out</div>
+      </div>
+      <div class="fee-block"><div class="fee">$10K–$15K</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>WME comedy desk · or 85 South Show booking</div>
+      <div><span class="lbl">Suggested shows</span>1 weekend = <strong>4 shows</strong> · December 2026</div>
+      <div><span class="lbl">Forecast net</span><strong>$24,000 / weekend</strong></div>
+      <div><span class="lbl">ROI ratio</span>1.60</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> 85 South is a top-charting podcast — audience is Mobile demographic that Saraland-only marketing won't reach. Tony Baker delivers similar reach at lower cost in October; Karlous is the December premium-tier follow-up.</div>
+  </div>
+
+  <h3 style="margin-top: 22pt;">TIER C — Local / Emerging</h3>
+
+  <div class="comic-card">
+    <div class="header-row">
+      <div class="name-block">
+        <div class="name">Local Mobile / Pensacola circuit <span class="tag tag-local" style="margin-left: 6pt;">C LOCAL</span></div>
+        <div class="meta-line">Compton Smith network (Smokey Jokes Mobile + Stingers Pensacola) · StarDome Alabama's Funniest Person Competition winners · Pensacola Indie Fringe Comedy Festival alumni</div>
+      </div>
+      <div class="fee-block"><div class="fee">$400–$1,500</div><div class="fee-label">Per night</div></div>
+    </div>
+    <div class="grid">
+      <div><span class="lbl">Booking</span>Direct DM via IG/FB · Compton Smith (founder) · StarDome competition winners</div>
+      <div><span class="lbl">Suggested shows</span>5 weekends across the run = <strong>20 shows</strong></div>
+      <div><span class="lbl">Forecast net</span>$15,000 × 5 weekends = <strong>$75,000 total</strong></div>
+      <div><span class="lbl">ROI ratio</span>variable, 4–6× in single-show terms</div>
+    </div>
+    <div class="why"><strong>Why this booking:</strong> Cheap, fillable, crucial. Local comics already have small followings in the Mobile/Pensacola corridor — they bring 30–50 ticket buyers each, and we get to reach those buyers with our marketing for the rest of the series. Lowest-cost path to email-list growth. Direct relationship with Compton Smith unlocks consistent local supply.</div>
+  </div>
+</section>
+
+<!-- =========== LOCAL MARKET =========== -->
+<section class="page-break">
+  <h2>Local Market Deep Dive</h2>
+
+  <h3>Saraland / Mobile / Gulf Shores corridor</h3>
+  <table>
+    <tbody>
+      <tr><td><strong>Saraland</strong></td><td>16,404 pop · 80.1% white · $61,509 median household income · median age 43.7 · manufacturing/healthcare/education base</td></tr>
+      <tr><td><strong>Mobile metro</strong></td><td>198,806 pop · $53,558 median income · diverse market · 15 min south</td></tr>
+      <tr><td><strong>Daphne / Spanish Fort</strong></td><td>~70K combined pop · 25 min east</td></tr>
+      <tr><td><strong>Pensacola metro</strong></td><td>~510K · 60 min east · second-largest market in our drive radius</td></tr>
+      <tr><td><strong>Gulf Shores</strong></td><td>tourist overflow esp. summer/fall</td></tr>
+      <tr><td><strong>Total addressable adult audience</strong></td><td><strong>~700K+ adults within 60-min drive</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Existing comedy market — what already plays this corridor</h3>
+  <table>
+    <thead><tr><th>Venue</th><th>Cap</th><th>Recent comedy bookings</th><th>Insight</th></tr></thead>
+    <tbody>
+      <tr><td>Saenger Theatre Mobile</td><td>1,900</td><td>Sal Vulcano (May 15), Daniel Tosh (Oct 9), Jim Gaffigan</td><td>Top-end of corridor — names that fill 1,900-cap = $50K+ talent fees</td></tr>
+      <tr><td>Pensacola Saenger</td><td>~1,800</td><td>Sal Vulcano, Daniel Tosh</td><td>Same tier as Mobile Saenger</td></tr>
+      <tr><td>Pensacola Bay Center</td><td>~10,000</td><td>Jim Gaffigan (Dec 28)</td><td>Festival-tier — not our competition</td></tr>
+      <tr><td>Soul Kitchen Mobile</td><td>~600</td><td>Moms Unhinged (April), Channing Wilson, indie/touring</td><td>Direct competitor on touring side; mostly music</td></tr>
+      <tr><td>Crescent Theater Mobile</td><td>~250</td><td>Jeremiah Watkins, Jen Kober, Karen Morgan</td><td><strong>Direct comp — same scale as RG 158.</strong> Their booking tier ($3K–$8K) validates our Tier B plan.</td></tr>
+      <tr><td>Smokey Jokes Mobile</td><td>~150</td><td>Local headliners</td><td>Compton Smith's club; the local-circuit gateway</td></tr>
+      <tr><td>Improvable Cause Pensacola</td><td>~120</td><td>Local + improv</td><td>Smaller; not direct comp</td></tr>
+      <tr><td>Brandon Styles Theater Pensacola</td><td>~250</td><td>Variety + comedy</td><td>Direct comp on size; mostly variety</td></tr>
+    </tbody>
+  </table>
+
+  <div class="info-box">
+    <strong>Key positioning:</strong> RG 158 is the only 200-cap room in the corridor that combines (a) full bar (×2), (b) on-site Southern BBQ catering, (c) concert-grade sound/lighting, and (d) curated Southern-comedy programming. Crescent Theater Mobile is the closest direct comparable — they book the right tier, but lack the bar + catering revenue model. <strong>Our F&amp;B revenue is the moat.</strong>
+  </div>
+
+  <h3>Talent supply lines for this corridor</h3>
+  <ol>
+    <li><strong>Compton Smith</strong> — founder of Smokey Jokes Mobile + Stingers Pensacola. Direct relationship gets you 5–10 vetted local headliners on rotation.</li>
+    <li><strong>StarDome Comedy Club Birmingham</strong> — touring Tier B routes through here. Phil Hanley, Tony Baker, Dave Attell all confirmed 2026 dates. We can ride the same booking pipeline (~3 hr drive).</li>
+    <li><strong>Pensacola Indie Fringe Comedy Festival</strong> (comedypensacola.com) — annual lineup is the discovery board for emerging Gulf-Coast circuit comics.</li>
+    <li><strong>"Alabama's Funniest Person Competition"</strong> at StarDome Summer 2026 — winner gets $3,500. Source of vetted local Alabama comics.</li>
+    <li><strong>Nashville-Saraland tour routing</strong> — Aaron Weber, Dusty Slay, John Crist, etc. all route through Birmingham/Nashville. We're ~6hr from Nashville — bookable as same-tour leg.</li>
+  </ol>
+</section>
+
+<!-- =========== AGENCIES =========== -->
+<section class="page-break">
+  <h2>Master Booking Agency Contacts</h2>
+
+  <h3>Tier 1 — Major agencies</h3>
+  <table>
+    <thead><tr><th>Agency</th><th>Contact</th><th>Comedy lead</th><th>Use for</th></tr></thead>
+    <tbody>
+      <tr><td><strong>WME</strong></td><td>9601 Wilshire Blvd, Beverly Hills · (310) 285-9000<br/>11 Madison Ave, NY · (212) 586-5100</td><td>Mike Berkowitz</td><td>Karlous Miller, Ryan Hamilton</td></tr>
+      <tr><td><strong>CAA</strong></td><td>2000 Avenue of the Stars, LA · (424) 288-2000<br/>405 Lexington Ave, NY · (212) 277-9000</td><td>Matt Blake</td><td>Top-tier name pitches</td></tr>
+      <tr><td><strong>UTA</strong></td><td>Los Angeles HQ</td><td>Nick Nuciforo</td><td>Major TV-credit comics</td></tr>
+      <tr><td><strong>Avalon Artists Group</strong></td><td>5455 Wilshire Blvd #900, LA · (323) 692-1700<br/>45 W 29th St #403, NY · (212) 868-3200</td><td>Heavy comedy roster</td><td>Phil Hanley, British/international</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Tier 2 — Mid-major + clean comedy specialists</h3>
+  <table>
+    <thead><tr><th>Agency</th><th>Contact</th><th>Notable roster</th></tr></thead>
+    <tbody>
+      <tr><td><strong>MN2S</strong></td><td>mn2s.com</td><td>Tom Segura, Bert Kreischer, <strong>Dusty Slay</strong>, Aaron Weber</td></tr>
+      <tr><td><strong>The Grable Group</strong></td><td>thegrablegroup.com</td><td><strong>Dustin Nickerson</strong> · clean comedy</td></tr>
+      <tr><td><strong>A to Z Entertainment</strong></td><td>(888) 655-4575</td><td>Clean + Southern roster · Killer Beaz, Michael Jr., Jamie Lissow, Daren Streblow</td></tr>
+      <tr><td><strong>Funny Business Agency</strong></td><td>funny-business.com</td><td>Mark Chalifoux, Midwest/clean</td></tr>
+      <tr><td><strong>Central Talent Booking</strong></td><td>centraltalentbooking.com</td><td>Dusty Slay, broad roster</td></tr>
+      <tr><td><strong>Headline Entertainment</strong></td><td>headlineentertainment.us</td><td>Southern focus</td></tr>
+      <tr><td><strong>WellRED Comedy</strong></td><td>wellredcomedy.com</td><td>Trae Crowder, Drew Morgan, Corey Ryan Forrester</td></tr>
+      <tr><td><strong>TAD Management</strong></td><td>tadmgmt.com</td><td><strong>Heath Hyche</strong> · Southern</td></tr>
+      <tr><td><strong>Summit Comedy</strong></td><td>summitcomedy.com</td><td>Southern/country roster · Heath Hyche</td></tr>
+      <tr><td><strong>Premiere Speakers</strong></td><td>premierespeakers.com/christian</td><td>Christian/clean — Daren Streblow, Michael Jr.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Local Mobile/Pensacola network</h3>
+  <table>
+    <thead><tr><th>Contact</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Compton Smith</strong> · founder Smokey Jokes Mobile + Stingers Pensacola</td><td>Gatekeeper to the local circuit. Direct relationship = consistent supply of $400–$1,500 local headliners.</td></tr>
+      <tr><td><strong>StarDome Comedy Club Birmingham</strong> · stardome.com</td><td>Booking pipeline — touring Tier B comics route through here. Many bookable as same-tour Saraland adds.</td></tr>
+      <tr><td><strong>Pensacola Indie Fringe Festival</strong> · comedypensacola.com</td><td>Discovery board for emerging Gulf-Coast comics</td></tr>
+      <tr><td><strong>Crescent Theater Mobile</strong></td><td>Direct competitor at our scale. Reverse-engineer their bookings for tier validation.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- =========== RISKS =========== -->
+<section class="page-break">
+  <h2>Risk Register (v2)</h2>
+
+  <table>
+    <thead><tr><th>Risk</th><th>Probability</th><th>Impact</th><th>Mitigation</th></tr></thead>
+    <tbody>
+      <tr><td>Heath Hyche debut underdraws — bad first impression</td><td>Low</td><td>High</td><td>Heath Hyche is the safest first booking — Birmingham native + Blue Collar TV credit means built-in regional press story. Pre-press to Mobile media + AL.com 30 days out.</td></tr>
+      <tr><td>Working capital depleted before Tier A anchor possible</td><td>Low</td><td>Very High</td><td>Capital sequencing rule (§Snowball) gates all bookings against bank. Anchor only signed when working capital ≥ 4× anchor fee. Snowball math is conservative; even 50% sellthrough miss in months 1–3 still permits Nov anchor.</td></tr>
+      <tr><td>Anchor cancels last-minute</td><td>Low</td><td>Very High</td><td>Tier C swing comedian on $400 hold retainer + 2× activation. Talent cancellation insurance rider for anchors.</td></tr>
+      <tr><td>2-item minimum confuses ticket buyers</td><td>Medium</td><td>Medium</td><td>Lift Helium Comedy Club's exact FAQ language onto rg158ent.com /shows page. Disclose at every checkout step.</td></tr>
+      <tr><td>Saraland city pushback on noise / late hours</td><td>Medium</td><td>High</td><td>Pre-empt: meet city manager before announcement. Comedy ends by 11PM (easier neighbor sell).</td></tr>
+      <tr><td>Phil Hanley unavailable for September</td><td>Medium</td><td>Medium</td><td>Backup: Tony Baker shifts from October to September; Dustin Nickerson shifts to October. Schedule designed with one-month flex.</td></tr>
+      <tr><td>Comic tour routing puts them out of region</td><td>Medium</td><td>Medium</td><td>Offer extra night at J Rodgers BBQ + free hotel night. Make Saraland a destination stop, not a detour.</td></tr>
+      <tr><td>Sellthrough below 60% blended</td><td>Low–Medium</td><td>High</td><td>30% buffer in conservative forecast. Below 50% triggers cost-cut: drop opener, halve marketing, comp 30 free seats.</td></tr>
+      <tr><td>F&amp;B costs spike</td><td>Medium</td><td>Low–Medium</td><td>J Rodgers cost-plus pricing locked. Bar items higher-margin and offset.</td></tr>
+      <tr><td>Festival fundraising target slips</td><td>Low</td><td>Very High</td><td>Comedy series cushion is 2–3× minimum festival operating capital target. Even 50% of forecast hits target.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- =========== FESTIVAL BRIDGE =========== -->
+<section class="page-break">
+  <h2>The April 2027 Country Music Festival Bridge</h2>
+
+  <p>The comedy series is not the goal. It's the seed-capital engine for the 2-day, 10,000-attendee country music festival in April 2027.</p>
+
+  <h3>Festival snapshot</h3>
+  <table>
+    <tbody>
+      <tr><td><strong>Format</strong></td><td>2-day outdoor festival, music both days</td></tr>
+      <tr><td><strong>Attendance target</strong></td><td>10,000 total tickets across the weekend</td></tr>
+      <tr><td><strong>Talent budget</strong></td><td>$300,000 across both days</td></tr>
+      <tr><td><strong>Day 1 anchor (primary)</strong></td><td><strong>Parmalee</strong> — established mid-tier touring band ("Carolina," "Take My Name")</td></tr>
+      <tr><td><strong>Day 2 anchor (alts)</strong></td><td>Walker Hayes ($90K), Mitchell Tenpenny ($100K), Niko Moon ($60K)</td></tr>
+      <tr><td><strong>Direct support tier</strong></td><td>Drew Baldridge, Wyatt Flores (lock early), Jackson Dean, Tyler Braden ($25K–$70K)</td></tr>
+      <tr><td><strong>Total festival budget</strong></td><td>$1.0M – $1.3M</td></tr>
+      <tr><td><strong>Net target</strong></td><td>$150K – $300K</td></tr>
+    </tbody>
+  </table>
+
+  <h3>How the comedy snowball funds it</h3>
+  <p>The conservative comedy series net of <strong>$413K</strong> covers:</p>
+  <ul>
+    <li><strong>Talent deposits</strong> — most agents want 50% on signing. Parmalee at ~$130K guarantee = ~$65K deposit.</li>
+    <li><strong>Production deposits</strong> — stage, sound, lighting (25–50% on signing 60–90 days out)</li>
+    <li><strong>Marketing pre-spend</strong> — 90–120 days of paid media before gate revenue arrives</li>
+    <li><strong>Insurance premium</strong> — paid up front</li>
+    <li><strong>Permit and legal fees</strong> — filed months in advance</li>
+  </ul>
+
+  <h3>Three additional benefits beyond cash</h3>
+  <ol>
+    <li><strong>An 8,000-deep email list</strong> of confirmed local entertainment buyers — used as the festival presale list at 10–20% discount.</li>
+    <li><strong>Saraland city-hall trust</strong> earned through 8 months of well-run shows — required for outdoor festival permits.</li>
+    <li><strong>Real venue-runway data</strong> on what actually draws in this corridor.</li>
+  </ol>
+</section>
+
+<!-- =========== ASKS =========== -->
+<section class="page-break">
+  <h2>Investor &amp; Stakeholder Asks (v2)</h2>
+
+  <h3>Decisions needed</h3>
+  <ol>
+    <li><strong>Approve $10K starting capital deployment</strong> — fully consumed in July weekend 1 (Heath Hyche debut + ops). No additional outside capital required if snowball math holds.</li>
+    <li><strong>Approve the v2 schedule</strong> — capital-sequenced bookings with anchors in Nov, Jan, Feb (not Oct as in v1).</li>
+    <li><strong>Approve Tier A anchor exposure ceiling</strong> — $20K/anchor × 3 anchors = $60K maximum cumulative deposit exposure (deposits paid in Aug/Oct/Dec respectively, against working capital that's well in excess of those numbers by then).</li>
+    <li><strong>Approve `/shows` ticketing flow build</strong> on rg158ent.com — 8–12 hours of dev work to add ticket SKUs to existing Square checkout.</li>
+    <li><strong>Authorize Saraland city-manager outreach</strong> ahead of the first booking announcement.</li>
+  </ol>
+
+  <h3>Capital deployment timeline</h3>
+  <table>
+    <thead><tr><th>Date</th><th>Action</th><th class="num">Cash deployed</th><th class="num">Working capital</th></tr></thead>
+    <tbody>
+      <tr><td>May 2026</td><td>Send all outreach emails. Build /shows flow.</td><td class="num">$3,000</td><td class="num">$7,000</td></tr>
+      <tr><td>June 2026</td><td>Lock first 3 bookings (Heath Hyche, local, Adam Minnick). Pay deposits.</td><td class="num">$2,650</td><td class="num">$4,350</td></tr>
+      <tr><td>Jul 10–11</td><td>Heath Hyche debut weekend</td><td class="num">$10,000 deployed → +$22K net</td><td class="num">$26,350</td></tr>
+      <tr><td>End July</td><td>Three weekends complete</td><td class="num">+$45K total net</td><td class="num">$55,000</td></tr>
+      <tr><td>End Aug</td><td>Aaron Weber, Mark Chalifoux complete</td><td class="num">+$60K</td><td class="num">$115,000</td></tr>
+      <tr><td>End Sep</td><td>Phil Hanley + Lace Larrabee complete</td><td class="num">+$75K</td><td class="num">$190,000</td></tr>
+      <tr><td>End Oct</td><td>Dustin Nickerson + Tony Baker complete</td><td class="num">+$80K</td><td class="num">$270,000</td></tr>
+      <tr><td>End Nov</td><td>⭐ Killer Beaz anchor weekend</td><td class="num">+$90K</td><td class="num">$360,000</td></tr>
+      <tr><td>End Dec</td><td>Karlous Miller, Aaron Weber return</td><td class="num">+$66K</td><td class="num">$426,000</td></tr>
+      <tr><td>End Jan 2027</td><td>⭐ Dusty Slay anchor weekend</td><td class="num">+$80K</td><td class="num">$506,000</td></tr>
+      <tr><td>End Feb 2027</td><td>⭐⭐ Trae Crowder + festival announcement</td><td class="num">+$89K</td><td class="num">$595,000</td></tr>
+      <tr><td>Mar–Apr 2027</td><td>Comedy net deployed into festival deposits + marketing</td><td class="num">($395,000)</td><td class="num">$200,000 reserve</td></tr>
+      <tr><td>Apr 2027</td><td>Festival weekend. Gate revenue arrives.</td><td class="num">+$300,000+ NET</td><td class="num">$500,000+</td></tr>
+    </tbody>
+  </table>
+
+  <p class="small">Conservative case (30% sellthrough buffer): all working-capital figures reduced ~30%. Even at conservative case, Tier A anchors are bookable per the capital-sequencing rule; festival deposits are fundable; net target hit.</p>
+
+  <h3>Next 30 days (action list)</h3>
+  <ol>
+    <li>Send Heath Hyche outreach to TAD Management (priority #1 — debut booking)</li>
+    <li>Build relationship with Compton Smith (Smokey Jokes Mobile founder) — local-circuit access</li>
+    <li>Send Aaron Weber outreach via MN2S (priority #2 — August Tier B opener)</li>
+    <li>Send Phil Hanley outreach via philhanley.com / Avalon (priority #3 — September premium)</li>
+    <li>Send all remaining Tier B emails within a 7-day window</li>
+    <li>Confirm rg158ent.com `blayke@` email is live</li>
+    <li>Confirm insurance entertainment-rider with current carrier</li>
+    <li>Negotiate hotel partnership at Hampton Saraland</li>
+    <li>Saraland city manager soft-pitch meeting</li>
+    <li>Build /shows ticketing flow on rg158ent.com</li>
+    <li>Stand up "Saraland Stand-Up Series" branded IG/TikTok handle</li>
+    <li>Email-capture banner live on rg158ent.com homepage</li>
+    <li>Festival sub-account in Square + QBO (track every comedy net dollar toward April 2027)</li>
+  </ol>
+</section>
+
+<!-- ============================================================
+     APPENDIX A — VETERAN PROMOTER REVIEW (added in v3)
+     ============================================================ -->
+<section class="page-break">
+  <h2>Appendix A · Veteran Promoter Review — Critical Risks</h2>
+  <p class="muted small">Read by an experienced promoter/event-specialist lens before going live. The strategy is structurally sound and the goal is achievable, but five mathematical risks can kill it and thirteen operational gaps will quietly bleed money if not fixed before show one.</p>
+
+  <h3 style="margin-top: 18pt;">A.1 · The 5 risks that can kill this — fix before booking anything</h3>
+
+  <div class="alert-box">
+    <strong>Risk 1 · Two-show nights at announce is the single biggest assumption risk.</strong><br/>
+    A 200-cap room × 2 shows = 400 paid seats per Friday. For a market with zero comedy track record, that's a 12-month-out goal, not a launch-night goal. Helium, Zanies, and the Improv chains all announce one show first; second show is added "due to demand" only after sellouts.
+    <p style="margin: 6pt 0 0 0;"><strong>Fix:</strong> First 90 days = 1-show nights only. Add the second show only on shows where the first is 80%+ sold 14 days out. Conservative net forecast drops to <strong>$220K–$280K</strong> on a 1-show ramp, not the v2 $384K.</p>
+  </div>
+
+  <div class="alert-box">
+    <strong>Risk 2 · 60% sellthrough is the industry sellout rate, not the average.</strong><br/>
+    Industry baseline for a brand-new venue is 35–50% in months 1–3, climbing to 55–65% only by month 4–6. If July does 40% on a $5K talent fee, you net $1K–$2K — not $7K–$13K. Snowball stalls before show 3.
+    <p style="margin: 6pt 0 0 0;"><strong>Fix:</strong> Stress-test the snowball at 40% sellthrough. If it breaks, the lineup needs more $1.5K–$2.5K openers stacked before the first $5K booking.</p>
+  </div>
+
+  <div class="alert-box">
+    <strong>Risk 3 · $10K cannot support a $5K talent fee — the working-capital math is brutal.</strong><br/>
+    $5K talent + $1.5K production + $400 insurance + $1K staff + $400 marketing + $300 hospitality + $300 contingency = $8,900 in costs before a single ticket sells. That leaves $1,100 of cushion for a delayed Square payout, refund batch, or Saturday no-show.
+    <p style="margin: 6pt 0 0 0;"><strong>Fix:</strong> Show 1 talent ceiling = <strong>$1,500–$2,000 max</strong>. v2 already places Heath Hyche there — keep it. Don't book a $5K headliner until working capital ≥ $20K liquid in the festival sub-account.</p>
+  </div>
+
+  <div class="alert-box">
+    <strong>Risk 4 · Festival venue gap is the critical path, not Phase 2.</strong><br/>
+    No 10K-attendee outdoor venue is locked. Permitting an outdoor 10K event in a small Alabama city takes 6–9 months: city council, county zoning, ABC liquor variance, fire marshal capacity, EMS staging, traffic plan, neighbor notification. Without venue secured by <strong>September 2026</strong>, you cannot sign a Parmalee deposit, bind insurance, lock production, or pitch sponsors.
+    <p style="margin: 6pt 0 0 0;"><strong>Fix:</strong> Saraland city manager meeting this week. Plan A (Saraland Sports Complex / Greater Gulf State Fairgrounds) and Plan B (private 60–80 acre pasture with road access) both scoped by end of June 2026.</p>
+  </div>
+
+  <div class="alert-box">
+    <strong>Risk 5 · Talent quote inflation 2026 is real — your locks aren't locks.</strong><br/>
+    Pollstar / Ticket Fairy 2026 data shows 30–50% YoY fee climbs on Tier B/C touring comics. A May 2026 verbal quote for an October 2026 show typically does not hold — agents re-quote on Netflix specials, viral clips, or tour announcements.
+    <p style="margin: 6pt 0 0 0;"><strong>Fix:</strong> Every quote must be (a) <em>written</em>, (b) explicitly date-bracketed ("valid for shows performed by [date]"), (c) deposit-locked as fast as cash flow allows. Wyatt Flores especially: lock his quote <em>this week</em>, not May/June.</p>
+  </div>
+
+  <h3 style="margin-top: 22pt;">A.2 · The 13 operational gaps that will cost money in execution</h3>
+  <table>
+    <thead><tr><th>#</th><th>Gap</th><th>Impact</th><th>Fix</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>2-item minimum needs POS enforcement (most venues mess this up)</td><td>F&amp;B drops $10K → $5K/night</td><td>Hard sign at door, POS prompt, server wristband tracking</td></tr>
+      <tr><td>2</td><td>$40 hospitality buyout is below 2026 standard ($60–75)</td><td>Comics counter-quote $1K–$2K higher to compensate</td><td>Move to $60/principal flat — costs $400/show, saves fee inflation</td></tr>
+      <tr><td>3</td><td>Two-show comics charge +$500–$1,500 for the second set</td><td>Hidden 10–30% cost on every Tier B</td><td>Negotiate ALL-IN flat covering "up to 2 sets per night"</td></tr>
+      <tr><td>4</td><td>Agent commissions are off-the-top (10–15%)</td><td>$5K comic actually costs $5,500–$5,750</td><td>Add 12% commission line: real cost = quote × 1.12</td></tr>
+      <tr><td>5</td><td>Marketing budget thin ($400 vs 8–12% of gate = $1.1K–$1.7K)</td><td>Sub-50% sellthrough on shows that should hit 70%</td><td>Move to $800/show fixed + 10% gate variable</td></tr>
+      <tr><td>6</td><td>No swing-comic insurance for last-minute cancels</td><td>$5K–$10K refund event per cancel</td><td>2 local Tier C comics on $400 hold-fee + double-on-activation</td></tr>
+      <tr><td>7</td><td>Cancellation insurance not budgeted</td><td>Single weather/comic cancel = $8K–$15K loss</td><td>$200/show via Event Helper, K&amp;K, or Hub International</td></tr>
+      <tr><td>8</td><td>Walker Hayes at $90K is suspect (likely $150K–$250K)</td><td>$60K+ budget shortfall if assumed</td><td>Validate via WME Nashville before committing</td></tr>
+      <tr><td>9</td><td>Parmalee routes through CAA Nashville, not BBR (BBR is the label)</td><td>Wrong inquiry chain = 4–6 weeks lost</td><td>CAA Nashville (615) 383-8787 — Darin Murphy or current agent</td></tr>
+      <tr><td>10</td><td>Email-list math collapses (8K target vs 2,880 from shows alone)</td><td>Festival presale missing 5K subs</td><td>Add J Rodgers customer list import + festival waitlist + social contests</td></tr>
+      <tr><td>11</td><td>No box-office workflow defined</td><td>Operational chaos on night 1</td><td>Square Terminal + wristband system + 1hr server training per show</td></tr>
+      <tr><td>12</td><td>Day 1 / Day 2 festival economics conflated</td><td>Plan implicitly assumes 10K combined; each day must independently sell ~5K</td><td>Build separate Day 1 / Day 2 P&amp;Ls; both must clear independently</td></tr>
+      <tr><td>13</td><td>Festival sponsorship undersold ($100K vs 25–35% of revenue = $300K–$500K)</td><td>$200K–$400K left on the table</td><td>Bud Light, Ford F-150, Coors, Trustmark, Tito's, Wrangler decks ($25K–$100K each)</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 22pt;">A.3 · What's strong — preserve</h3>
+  <div class="summary-box">
+    <ul style="margin: 0; padding-left: 16pt;">
+      <li>Snowball capital sequencing concept — mathematically correct</li>
+      <li>8-month runway → festival — right time horizon</li>
+      <li>2-item minimum — right pricing primitive</li>
+      <li>Parmalee tier as anchor benchmark — realistic for first-time festival</li>
+      <li>Heath Hyche as Show 1 — Alabama native, low fee, marketing value, snowball-safe</li>
+      <li>ROI ranking methodology — gate ÷ fee is the right metric</li>
+      <li>Email list as festival asset — strategic gold</li>
+      <li>Comedy series as Saraland city-hall trust-builder — brilliant subtext, maintain it</li>
+      <li>Existing rg158ent.com Square infrastructure — real moat</li>
+      <li>J Rodgers BBQ cross-promo — moat squared</li>
+      <li>Three-pillar deal structures (flat / versus / split) — promoter-grade</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     APPENDIX B — MASTER BOOKING AGENCY DIRECTORY
+     ============================================================ -->
+<section class="page-break">
+  <h2>Appendix B · Master Booking Agency Directory</h2>
+  <p class="muted small">Who to contact, with named comedy agents and direct routes for every comedian on the RG 158 shortlist plus the country-music agencies for the April 2027 festival.</p>
+
+  <h3>B.1 · Tier 1 — Major agencies (formal pitch — slow, high quality)</h3>
+  <table>
+    <thead><tr><th>Agency</th><th>Office</th><th>Phone</th><th>Comedy contacts</th><th>Roster relevance</th></tr></thead>
+    <tbody>
+      <tr><td><strong>WME</strong></td><td>9601 Wilshire Blvd, Beverly Hills CA 90210<br/>NY: 11 Madison Ave, NY 10010<br/>Nashville: 1201 Demonbreun St</td><td>(310) 285-9000<br/>(212) 586-5100<br/>(615) 963-3000</td><td>Mike Berkowitz (Head of Comedy Touring)<br/>Marc Gerald · Sam Moradzadeh · Ari Lubet<br/>Nashville country: Jay Williams, Chris Pierce, Brian Hill</td><td>Phil Hanley, Mark Normand, mid-tier country acts</td></tr>
+      <tr><td><strong>CAA</strong></td><td>2000 Ave of the Stars, LA CA 90067<br/>Nashville: 401 Commerce St #700</td><td>(424) 288-2000<br/>(615) 383-8787</td><td>Matt Blake (Head of Comedy Touring)<br/>Christian Carino · Mike Berman · Hunter Hill<br/>Nashville country: <strong>Darin Murphy (Parmalee)</strong>, Marc Dennis, Kevin Neal, Brian Manning</td><td><strong>Parmalee, Walker Hayes,</strong> several Tier A comedy</td></tr>
+      <tr><td><strong>UTA</strong></td><td>9336 Civic Center Dr, Beverly Hills<br/>Nashville: 819 18th Ave S</td><td>(310) 273-6700<br/>(615) 297-0100</td><td>Nick Nuciforo (Head)<br/>David Anderson · Jolyon Rubinstein</td><td>Several Tier A comedy names</td></tr>
+      <tr><td><strong>Avalon Artists</strong></td><td>9255 Sunset Blvd #1010, West Hollywood</td><td>(323) 692-1700<br/>NY: (212) 868-3200</td><td>Tom Sharpe<br/>Jamie Masada (Comedy Store, related)</td><td>Lace Larrabee, Karlous Miller (some), Chico Bean</td></tr>
+    </tbody>
+  </table>
+  <p class="muted small">Email format for major agencies: typically <code>firstname.lastname@wmeagency.com</code>, <code>@caa.com</code>, <code>@unitedtalent.com</code>. Verify each. Address agents by name — assistants screen and a name-less email gets binned.</p>
+
+  <h3 style="margin-top: 18pt;">B.2 · Tier 2 — Mid-major agencies (your daily phone contacts)</h3>
+  <table>
+    <thead><tr><th>Agency</th><th>Web · Phone</th><th>Specialty</th><th>RG 158 roster relevance</th></tr></thead>
+    <tbody>
+      <tr><td><strong>MN2S</strong></td><td>mn2s.com · (212) 729-2188</td><td>Global comedy roster, mid-major</td><td><strong>Tom Segura, Bert Kreischer, Dusty Slay</strong></td></tr>
+      <tr><td><strong>A to Z Entertainment</strong></td><td>atozentertainment.com · (888) 655-4575</td><td>Clean / corporate / Christian / Southern</td><td>Henry Cho, multiple clean Tier A/B names</td></tr>
+      <tr><td><strong>The Grable Group</strong></td><td>thegrablegroup.com · (615) 283-0039</td><td>Clean, Christian, family-corporate (Nashville)</td><td><strong>Dustin Nickerson</strong>, John Crist, Henry Cho</td></tr>
+      <tr><td><strong>Funny Business Agency</strong></td><td>funny-business.com · (231) 933-7575</td><td>Midwest, clean, college, corporate</td><td>Mark Gross, Mark Chalifoux, multiple Tier B clean</td></tr>
+      <tr><td><strong>Central Talent Booking</strong></td><td>centraltalentbooking.com</td><td>Touring comedy, club circuit</td><td><strong>Dusty Slay (alt route)</strong>, Nashville-circle. Ask for Jackie Knobbe / Andrew Lambrose / Nick Ngo</td></tr>
+      <tr><td><strong>Headline Entertainment</strong></td><td>headlineentertainment.us</td><td>Southern / blue-collar</td><td>Multiple Southern Tier B/C, country crossover</td></tr>
+      <tr><td><strong>Sound Talent Group</strong></td><td>soundtalentgroup.com</td><td>Newer agency, music + comedy</td><td>Mid-tier touring on the rise</td></tr>
+      <tr><td><strong>Authentic Talent</strong></td><td>authentictalent.com · (323) 658-7600</td><td>Black comedy, urban-rooted, podcast</td><td><strong>Tony Baker</strong>, several Mobile-target Black comedians</td></tr>
+      <tr><td><strong>3 Arts Entertainment</strong></td><td>3arts.com · (310) 888-3200</td><td>Larger management firm (TV/film/comedy)</td><td>Various Tier A names, JFL alums</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 18pt;">B.3 · Tier 3 — Direct-to-comic / management routes</h3>
+  <table>
+    <thead><tr><th>Comedian</th><th>Direct route</th><th>Backup route</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Heath Hyche</strong></td><td>heathhyche.com contact form</td><td>DM @heathhyche on IG</td></tr>
+      <tr><td><strong>Aaron Weber</strong></td><td>aaronwebercomedy.com / Nateland Entertainment</td><td>MN2S Nashville-circle</td></tr>
+      <tr><td><strong>Dusty Slay</strong></td><td>MN2S roster page</td><td>Central Talent Booking</td></tr>
+      <tr><td><strong>Phil Hanley</strong></td><td>philhanley.com → WME</td><td>DM @philhanley on IG</td></tr>
+      <tr><td><strong>Tony Baker</strong></td><td>Authentic Talent</td><td>DM @realtonybaker</td></tr>
+      <tr><td><strong>Killer Beaz</strong></td><td>killerbeaz.com contact form</td><td>A to Z Entertainment · Opry artist services</td></tr>
+      <tr><td><strong>Trae Crowder</strong></td><td>traecrowdertour.com</td><td>WellRED Comedy management (wellredcomedy.com)</td></tr>
+      <tr><td><strong>Drew Morgan + Corey Ryan Forrester</strong></td><td>wellredcomedy.com</td><td>Trae Crowder shared management</td></tr>
+      <tr><td><strong>Lace Larrabee</strong></td><td>lacelarrabee.com</td><td>Avalon Artists Group</td></tr>
+      <tr><td><strong>Karlous Miller</strong></td><td>85 South Show management</td><td>Authentic Talent · major agency (verify current)</td></tr>
+      <tr><td><strong>Dustin Nickerson</strong></td><td>The Grable Group</td><td>Direct via dustinnickerson.com</td></tr>
+      <tr><td><strong>Mark Chalifoux</strong></td><td>Funny Business Agency</td><td>Direct via markchalifoux.com</td></tr>
+      <tr><td><strong>Adam Minnick</strong></td><td>Direct via adamminnick.com</td><td>Dry Bar Comedy roster</td></tr>
+      <tr><td><strong>Ryan Hamilton</strong></td><td>ryanhamiltoncomedy.com → likely WME</td><td>Direct-to-website inquiry</td></tr>
+      <tr><td><strong>Mary Mack</strong></td><td>marymackcomedy.com</td><td>Funny Business Agency</td></tr>
+      <tr><td><strong>Henry Cho</strong></td><td>henrychocomedy.com</td><td>A to Z Entertainment · Grable Group</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 18pt;">B.4 · Country music agencies (FESTIVAL — start now)</h3>
+  <p class="small">For the April 2027 country music festival anchor lineup (Parmalee tier).</p>
+  <table>
+    <thead><tr><th>Artist</th><th>Agency</th><th>Specific contact</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Parmalee</strong> ⭐</td><td><strong>CAA Nashville</strong> (NOT BBR — BBR is the label)</td><td>Darin Murphy · (615) 383-8787 — verify current agent</td></tr>
+      <tr><td><strong>Walker Hayes</strong></td><td>WME Nashville</td><td>Jay Williams team · (615) 963-3000</td></tr>
+      <tr><td><strong>Mitchell Tenpenny</strong></td><td>Riser House / CAA Nashville</td><td>Verify per recent label/agency moves</td></tr>
+      <tr><td><strong>Drew Baldridge</strong></td><td>Independent / direct + management</td><td>drewbaldridge.com → management</td></tr>
+      <tr><td><strong>Wyatt Flores</strong> ⭐ LOCK NOW</td><td>Monaterra Music Group</td><td>wyattflores.com → management listed</td></tr>
+      <tr><td><strong>Jackson Dean</strong></td><td>CAA Nashville</td><td>(615) 383-8787</td></tr>
+      <tr><td><strong>Tyler Braden</strong></td><td>WME Nashville</td><td>(615) 963-3000</td></tr>
+      <tr><td><strong>Niko Moon</strong></td><td>CAA / verify</td><td>bookingagentinfo.com</td></tr>
+      <tr><td><strong>Tigirlily Gold</strong></td><td>Independent / verify</td><td>tigirlilygold.com</td></tr>
+      <tr><td><strong>Conner Smith</strong></td><td>WME Nashville</td><td>(615) 963-3000</td></tr>
+      <tr><td><strong>Filmore</strong></td><td>Independent / direct</td><td>filmoreofficial.com</td></tr>
+      <tr><td><strong>Restless Road</strong></td><td>CAA Nashville</td><td>(615) 383-8787</td></tr>
+      <tr><td><strong>Chayce Beckham</strong></td><td>WME (post-Idol)</td><td>(615) 963-3000</td></tr>
+      <tr><td><strong>Dasha</strong></td><td>Verify recent — viral momentum changed routing</td><td>dashaofficial.com</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 18pt;">B.5 · Black-comedy specialty routing (Mobile-market reach)</h3>
+  <table>
+    <thead><tr><th>Comedian</th><th>Agency</th><th>Contact</th></tr></thead>
+    <tbody>
+      <tr><td>Tony Baker</td><td>Authentic Talent</td><td>authentictalent.com</td></tr>
+      <tr><td>Karlous Miller</td><td>Major (verify — likely CAA or 3 Arts)</td><td>85 South Show management</td></tr>
+      <tr><td>Chico Bean</td><td>Avalon Artists Group</td><td>avalonusa.com</td></tr>
+      <tr><td>DC Young Fly</td><td>CAA</td><td>bookingagentinfo.com confirms</td></tr>
+      <tr><td>Lavell Crawford</td><td>Authentic / direct</td><td>lavellcomedy.com</td></tr>
+      <tr><td>Kountry Wayne</td><td>WME / Mosaic</td><td>kountrywayne.com → management listed</td></tr>
+      <tr><td>Nate Jackson</td><td>Direct via Super Funny Comedy Club Tacoma</td><td>natejacksoncomedy.com</td></tr>
+      <tr><td>Mike Epps</td><td>Authentic Talent</td><td>authentictalent.com</td></tr>
+      <tr><td>Eddie Griffin</td><td>Authentic / direct</td><td>eddiegriffin.com</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 18pt;">B.6 · Local circuit (Tier C openers + emergency swing)</h3>
+  <ul>
+    <li><strong>Compton Smith</strong> (Mobile-area comic, network gatekeeper) — search his social for direct contact</li>
+    <li><strong>Smokey Jokes Comedy Club Mobile</strong> — local talent network for openers</li>
+    <li><strong>Stingers Comedy Club Pensacola</strong> — open mic + opener pipeline</li>
+    <li><strong>StarDome Comedy Club Birmingham</strong> — mid-tier touring routing reference</li>
+    <li><strong>Crescent Theater Mobile</strong> — direct comp venue (book opposite weekends)</li>
+    <li><strong>Pensacola Indie Fringe</strong> — alt-circuit talent</li>
+  </ul>
+</section>
+
+<!-- ============================================================
+     APPENDIX C — NEGOTIATION PLAYBOOK
+     ============================================================ -->
+<section class="page-break">
+  <h2>Appendix C · Negotiation Playbook — Incentives, Leverage &amp; Deal Templates</h2>
+  <p class="muted small">Convert non-cash assets into perceived value. The goal: pay 70% of the comedian's corporate quote and have them say yes happily.</p>
+
+  <h3>C.1 · What RG 158 has that other 200-cap rooms don't</h3>
+  <p class="small">Lead every conversation by referencing at least 2 of these moats:</p>
+  <ol>
+    <li><strong>Two on-site bars</strong> (main + upstairs VIP) — most 200-cap rooms have one. Real upper-tier VIP product, not theater.</li>
+    <li><strong>Concert-grade PA + programmable stage lighting</strong> — comedians shooting specials from your room get clean audio.</li>
+    <li><strong>J Rodgers BBQ on-site</strong> — 30+ years, 4.3 stars. $150 perceived value, $50 actual cost. Most clubs serve $40 Domino's.</li>
+    <li><strong>Lockable upstairs VIP greenroom</strong> — most clubs have a curtained-off broom closet.</li>
+    <li><strong>15 minutes from Mobile, 60-min radius covers 400K adults</strong> — bigger draw radius than most equivalent-metro comedy rooms.</li>
+    <li><strong>Sister business cross-promo (J Rodgers BBQ)</strong> — built-in 30-year customer list of Saraland regulars who are exactly this audience.</li>
+    <li><strong>Festival comedy slot reservation right</strong> — UNIQUE to RG 158. No other 200-cap club can offer "do well here, get a paid 30-min slot at our 10K-attendee festival in April 2027."</li>
+    <li><strong>Owner-operator buy-in</strong> — agents prefer dealing directly with the owner. No middlemen.</li>
+    <li><strong>Already-built rg158ent.com with Square checkout</strong> — agents check the site. Yours passes; 80% of small venues fail this test.</li>
+    <li><strong>No radius-clause conflicts</strong> — no other 200-cap comedy room within 60 miles. Their last/next routing won't conflict.</li>
+  </ol>
+
+  <h3 style="margin-top: 22pt;">C.2 · Incentive levers — convert non-cash assets to fee discounts</h3>
+  <table>
+    <thead><tr><th>Lever</th><th class="num">Cash cost</th><th>Perceived value</th><th>Best used when</th></tr></thead>
+    <tbody>
+      <tr><td>Hampton Saraland hotel partnership</td><td class="num">$0–$95/night</td><td>$150–$200</td><td>Always — table stakes</td></tr>
+      <tr><td>Ground transport (party bus, limo, Uber)</td><td class="num">$50–$200</td><td>$200–$400</td><td>Tier B and up</td></tr>
+      <tr><td>J Rodgers BBQ private dinner</td><td class="num">$40–$80</td><td>$150–$250</td><td>Always — your unique signature</td></tr>
+      <tr><td><strong>$60 buyout per principal</strong> (2026 standard)</td><td class="num">$60–$240</td><td>$60–$240</td><td>Always — non-negotiable price floor</td></tr>
+      <tr><td>Comp tickets for crew + family (5–10)</td><td class="num">$0</td><td>$300–$700</td><td>Tier B and up</td></tr>
+      <tr><td><strong>60-second vertical post-show clip</strong> (rights kept by comic)</td><td class="num">$0–$200</td><td>$1,500+ (one viral clip = tens of thousands)</td><td>EVERY comic — non-negotiable for you</td></tr>
+      <tr><td><strong>Festival comedy slot booking right</strong> (April 2027)</td><td class="num">$0 today</td><td>$5,000–$15,000 future booking</td><td>Tier A and B — UNIQUE LEVER</td></tr>
+      <tr><td>Routing-detour kicker ($500 travel stipend)</td><td class="num">$500</td><td>$500 cash + closes routing gap</td><td>Comics already in region</td></tr>
+      <tr><td>Repeat-booking discount (10% off second booking if first clears 80%)</td><td class="num">$500–$2K future</td><td>$500–$2K future + relationship</td><td>Tier B touring acts you want to grow with</td></tr>
+      <tr><td>Merch rights — 100% to comic, no cut</td><td class="num">$0</td><td>$500–$3,000/show</td><td>Always — never take a merch split</td></tr>
+      <tr><td>J Rodgers BBQ cross-promo (30-yr customer list)</td><td class="num">$0</td><td>$1,000+ marketing reach</td><td>Local-pride pitches (Heath, Dusty)</td></tr>
+      <tr><td>Country radio trade (WKSJ, WDLT, Magic 99.9)</td><td class="num">$0</td><td>$2,000–$5,000 perceived ad value</td><td>Hi-volume promoters, country-leaning</td></tr>
+      <tr><td>Saraland/Mobile media (Lagniappe, AL.com)</td><td class="num">$0</td><td>$1,000–$3,000 PR value</td><td>First-of-series headliners</td></tr>
+      <tr><td>Same-night cash settlement (or NET-7 max)</td><td class="num">$0</td><td>High trust signal</td><td>Always offer; many venues are NET-30</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 22pt;">C.3 · Three deal-structure templates — pick by tier</h3>
+  <div class="info-box"><strong>Template A · Flat guarantee (Tier C / first-time comics)</strong><br/>
+    "$1,500 flat for one show, $2,500 flat for two shows. Includes hotel, ground, $60 buyout per principal, BBQ dinner, comp tickets for crew + 4 guests. Deposit 50% on signing, balance same night cash."</div>
+
+  <div class="info-box"><strong>Template B · Versus deal (Tier B workhorses — DEFAULT)</strong><br/>
+    "$5,000 versus 70% of net door over $7,500 — whichever is greater. Net door = ticket revenue minus Square fees, comps, holds. F&amp;B stays 100% with venue. Settlement same night cash or NET-7 wire."</div>
+
+  <div class="info-box"><strong>Template C · Door split + low guarantee (Tier A anchors only)</strong><br/>
+    "$10,000 + 80% of net door above $20,000. F&amp;B stays 100% with venue. Settlement same night cash. Deposit 50% on signing, balance pre-show day."</div>
+
+  <h3 style="margin-top: 22pt;">C.4 · Counter-leverage scripts — when agents push back</h3>
+  <table>
+    <thead><tr><th>Agent says</th><th>Your reply</th></tr></thead>
+    <tbody>
+      <tr><td>"What's your guarantee?"</td><td>"Open to flat, versus, or door split. Send their standard quote and let's work backward from their draw on a 200-cap two-show."</td></tr>
+      <tr><td>"What's your draw history?"</td><td>"RG 158 has hosted [list 2-3 prior events]. Series launches July 2026 — debut headliner gets full marketing weight. $800/show fixed Meta + 25K social reach + J Rodgers cross-promo + Mobile country radio trade."</td></tr>
+      <tr><td>Quote is too high</td><td>"Outside the budget for a debut series booking. Can we look at a versus deal — pays them more on a sellout but gives us breakeven protection?"</td></tr>
+      <tr><td>Wants full guarantee at top of range</td><td>"Guarantee at [-25% of ask] plus 70% net door above breakeven — that's where the upside is."</td></tr>
+      <tr><td>Asks for radius clause &gt; 50 mi</td><td>"Standard 50 mi / 60 days is fine — anything beyond conflicts with our calendar."</td></tr>
+      <tr><td>Asks for all the door</td><td>Walk away. "Doesn't work — bar and F&amp;B economics are how the venue stays in business."</td></tr>
+      <tr><td>Wants merch cut</td><td>Always offer 100% merch to comic. Never take a split.</td></tr>
+      <tr><td>Rider has a private chef line</td><td>Counter: "$60/principal buyout instead of catered greenroom." Don't negotiate the menu.</td></tr>
+      <tr><td>Settlement timing pushed to NET-30</td><td>"Same night cash or NET-7. NET-30 doesn't work for our books."</td></tr>
+      <tr><td>"Need flight + hotel for entourage of 5"</td><td>"$60 buyout × 5, hotel for principal + 1, ground for the group, additional rooms at our partner rate (comic covers cost)."</td></tr>
+      <tr><td>Asks for 2-show fee bump (+$1K)</td><td>Pre-budget +30% on Tier B for 2-show; if you only want 1 show, say so up front.</td></tr>
+      <tr><td>Quote re-opens 90 days out</td><td>Hold them to the original written quote, or walk. This is bad-faith.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 22pt;">C.5 · Hard lines — never negotiate these away</h3>
+  <div class="alert-box">
+    <ul style="margin: 0; padding-left: 16pt;">
+      <li><strong>Bar / F&amp;B revenue</strong> — 100% stays with venue. Always.</li>
+      <li><strong>Radius clauses &gt; 60 days / 50 miles</strong> — kills your ability to book similar comics.</li>
+      <li><strong>NET-30 settlement</strong> — your cash flow can't carry that.</li>
+      <li><strong>All-door / no-guarantee venue split</strong> — kills bar economics.</li>
+      <li><strong>Cancellation without notice</strong> — must include 60-day-out = full refund + venue marketing reimbursement; 30-day-out = 50% deposit forfeit; 14-day-out = 100% deposit forfeit.</li>
+      <li><strong>No-recording-any-form clause</strong> — you need the right to capture the 60-second vertical clip.</li>
+      <li><strong>100% advance payment demand</strong> — 50% deposit on signing is the industry max for any comic under $50K fee.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     APPENDIX D — PRE-FLIGHT CHECKLIST
+     ============================================================ -->
+<section class="page-break">
+  <h2>Appendix D · Pre-Flight Checklist (Veteran's Pass)</h2>
+  <p class="muted small">Lock these before sending email #1. Each unchecked box is a future loss event.</p>
+
+  <h3>D.1 · Insurance</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>☐ Confirm general-liability carrier covers stand-up comedy (some policies have entertainment exclusions)</li>
+    <li>☐ <strong>Per-show event cancellation insurance</strong> — Event Helper, K&amp;K, Hub International — $150–$250/show</li>
+    <li>☐ Liquor-liability rider current</li>
+    <li>☐ Certificate of Insurance template ready (agents request before quoting)</li>
+  </ul>
+
+  <h3>D.2 · Legal / contracts</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>☐ Booking-contract template via DocuSign (comedy-specific from Berger Goldstein, NathanTimmel.com, or industry standard)</li>
+    <li>☐ Cancellation language: 60 / 30 / 14-day-out tiers</li>
+    <li>☐ No-radius clauses &gt; 60 days / 50 miles</li>
+    <li>☐ Same-night settlement clause OR NET-7 wire</li>
+  </ul>
+
+  <h3>D.3 · Operations</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>☐ <strong>2-item-minimum POS workflow tested</strong> — Square Terminal prompt + server training + door wristbands</li>
+    <li>☐ <strong>Box-office process locked</strong> — who scans tickets, tracks 2-item, handles will-call</li>
+    <li>☐ <strong>Swing-comic on retainer</strong> — 2 local Tier C, $400 hold-fee + double-on-activation</li>
+    <li>☐ Greenroom prep checklist — water, towels, snacks, mirror, lock, coffee/tea</li>
+  </ul>
+
+  <h3>D.4 · Venue / hospitality</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>☐ Hampton Saraland (or partner) corporate rate signed in writing</li>
+    <li>☐ Ground transport vendors confirmed (party bus + Uber Business + limo backup)</li>
+    <li>☐ J Rodgers BBQ greenroom dinner SOP — same menu every time, $50 cost target</li>
+    <li>☐ Hotel partner rate quoted in dollars, not negotiated per show</li>
+  </ul>
+
+  <h3>D.5 · Marketing / promotion</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>☐ Email-capture banner live on rg158ent.com homepage</li>
+    <li>☐ <strong>NON-show email capture pipeline</strong> — J Rodgers customer list import + festival waitlist + social contests (only way to hit 8K by Feb 2027)</li>
+    <li>☐ Meta Business Manager set up + first $200 audience-research test running</li>
+    <li>☐ WKSJ Kicker 94.9, WDLT 98.3, Magic 99.9/105.5 radio rep contacts confirmed</li>
+    <li>☐ <strong>TikTok content workflow</strong> — who shoots, who edits, who uploads within 48hr</li>
+  </ul>
+
+  <h3>D.6 · Festival critical path (parallel — don't wait for comedy series to "succeed first")</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>☐ <strong>Saraland city manager meeting THIS WEEK</strong></li>
+    <li>☐ Outdoor venue Plan A + Plan B scoped by end of June 2026</li>
+    <li>☐ <strong>Wyatt Flores quote-lock email THIS WEEK</strong> to Monaterra Music Group</li>
+    <li>☐ Parmalee CAA Nashville inquiry (Darin Murphy) — quote letter for April 2027 weekend headline 10K cap outdoor in Saraland AL</li>
+    <li>☐ Sponsorship deck drafted — 3 tiers ($5K / $25K / $100K) for Bud Light, Ford, Trustmark, J Rodgers, Coors, Tito's, Wrangler, Cabela's, Sirius Highway</li>
+  </ul>
+
+  <h3>D.7 · Financial</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>☐ QBO sub-account "Festival 2027" opened — every comedy net dollar tracked here</li>
+    <li>☐ Square sub-location for ticketed shows separate from rental events</li>
+    <li>☐ Per-show P&amp;L template locked — ticket rev, F&amp;B rev, talent, agent commission (12%), production, insurance, marketing, hospitality, staff, fees, net</li>
+    <li>☐ <strong>Snowball stress-test at 40% sellthrough</strong> — does Show 2 still get funded? If no, lower Show 1 talent ceiling.</li>
+  </ul>
+</section>
+
+<!-- ============================================================
+     APPENDIX E — REALISTIC FORECAST RANGE
+     ============================================================ -->
+<section class="page-break">
+  <h2>Appendix E · Realistic Forecast Range</h2>
+  <p class="muted small">Plan to the conservative case. Bank the realistic case. Celebrate the aspirational.</p>
+
+  <h3>E.1 · Comedy series (8-month run, July 2026 → Feb 2027)</h3>
+  <table>
+    <thead><tr><th>Scenario</th><th class="num">Avg sellthrough</th><th class="num">Net per ticketed night</th><th class="num">8-month total net</th><th>Funds festival?</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Conservative</strong> (likely months 1–3)</td><td class="num">40%</td><td class="num">$3,500</td><td class="num">$170K–$220K</td><td>Partial — needs sponsorship to fill gap</td></tr>
+      <tr><td><strong>Realistic</strong> (likely months 4–8)</td><td class="num">60%</td><td class="num">$7,500</td><td class="num">$280K–$350K</td><td>Yes — covers festival deposits + working capital</td></tr>
+      <tr><td><strong>Aspirational</strong> (sellouts)</td><td class="num">85%</td><td class="num">$12,500</td><td class="num">$420K–$500K</td><td>Yes — overfunds festival, builds reserves</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 18pt;">E.2 · Festival (April 2027, 2-day, 10K cap)</h3>
+  <table>
+    <thead><tr><th>Scenario</th><th class="num">Tickets sold</th><th class="num">Net</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Conservative</strong></td><td class="num">6,500 (65%)</td><td class="num">$200K–$350K</td></tr>
+      <tr><td><strong>Realistic</strong></td><td class="num">8,500 (85%)</td><td class="num">$400K–$550K</td></tr>
+      <tr><td><strong>Aspirational</strong> (sellout)</td><td class="num">10,000</td><td class="num">$580K–$700K</td></tr>
+    </tbody>
+  </table>
+  <p class="small">Economics still work in conservative case because sponsorship + camping + F&amp;B vendor cuts are independent of ticket sellthrough. Sponsorship is the most under-leveraged revenue line in the current plan — push it from $100K projection to $300K–$500K target.</p>
+</section>
+
+<div class="footer-line">
+  RG 158 Sports Bar &amp; Entertainment · 1444-C Industrial Parkway · Saraland, AL 36571 · rg158ent.com · (251) 217-2273 ·
+  Prepared May 10, 2026 · Brief version 3.0 · Veteran review + agency directory + negotiation playbook appended · For internal investor and stakeholder review only.
+</div>
+
+</body>
+</html>
